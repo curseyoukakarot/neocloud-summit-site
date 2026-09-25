@@ -59,14 +59,30 @@
       border-radius: 3px;
     }
     .nc-roster__num { font-size: 0.62rem; color: var(--grey-dim); }
-    .nc-roster__name { font-weight: 800; font-size: 0.92rem; letter-spacing: 0.01em; text-transform: uppercase; }
-    .nc-bars { margin-top: 2.4rem; display: flex; flex-direction: column; gap: 1.15rem; max-width: 780px; }
-    .nc-bar__head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.45rem; }
-    .nc-bar__label { font-size: 0.72rem; color: var(--white); }
-    .nc-bar__pct { font-size: 0.72rem; color: var(--yellow); }
-    .nc-bar__desc { font-size: 0.86rem; color: var(--grey); font-weight: 350; margin-top: 0.35rem; }
-    .nc-bar__track { height: 4px; background: rgba(255,255,255,0.08); border-radius: 2px; overflow: hidden; }
-    .nc-bar__fill { height: 100%; background: var(--grad-bolt); border-radius: 2px; }
+    .nc-roster__name { font-weight: 800; font-size: 0.92rem; letter-spacing: 0.01em; text-transform: uppercase; display: flex; flex-direction: column; gap: 0.35em; }
+    .nc-roster__tag { font-size: 0.54rem; font-weight: 700; letter-spacing: 0.12em; color: #34B6CE; }
+    .nc-roster__seat--keynote { border-color: rgba(52,182,206,0.55); background: rgba(52,182,206,0.07); }
+    /* ── Audience: editorial "who's in the room" intelligence map ── */
+    .nc-aud { margin-top: 2.6rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+    .nc-aud__card {
+      position: relative; border: 1px solid var(--line); background: var(--panel);
+      border-radius: 4px; padding: clamp(1.5rem, 2.4vw, 2.1rem);
+      display: flex; flex-direction: column; gap: 0.5rem; overflow: hidden;
+    }
+    .nc-aud__card::before {
+      content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+      background: var(--nc-grad, linear-gradient(180deg,#34B6CE,#14A14A));
+    }
+    .nc-aud__pct {
+      font-size: clamp(2.8rem, 5vw, 3.8rem); font-weight: 900; line-height: 0.95;
+      letter-spacing: -0.02em; font-style: italic;
+      background: linear-gradient(100deg,#5CD0E6 0%,#3FC66B 100%);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .nc-aud__pct sup { font-size: 0.4em; font-weight: 800; vertical-align: super; -webkit-text-fill-color: inherit; }
+    .nc-aud__label { font-size: 0.82rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: var(--white); }
+    .nc-aud__desc { font-size: 0.9rem; color: #D4D4DA; font-weight: 400; line-height: 1.55; margin-top: 0.1rem; }
+    .nc-aud__foot { margin-top: 2rem; font-size: 0.68rem; color: #8A8A93; }
     .nc-partner-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin-top: 2.4rem; }
     .nc-partner {
       border: 1px solid var(--line); background: var(--panel); border-radius: 4px;
@@ -81,6 +97,24 @@
       border: 1px solid var(--yellow); color: var(--yellow);
       font-size: 0.7rem; padding: 0.5em 1em; border-radius: 2px;
     }
+    /* Program phase-header rows (Morning / Midday / Afternoon / Evening) */
+    .timeline__item--phase {
+      margin: 2.6rem 0 0.6rem !important; padding: 1.3rem 1.4rem !important;
+      border: 1px solid rgba(52,182,206,0.45) !important;
+      border-left: 3px solid #34B6CE !important;
+      background: rgba(52,182,206,0.06) !important;
+      border-radius: 4px !important;
+    }
+    .timeline__item--phase:first-child { margin-top: 0.6rem !important; }
+    .timeline__item--phase:last-child { margin-bottom: 0.6rem !important; }
+    /* neutralize any base timeline connector/marker on phase cards so all four match */
+    .timeline__item--phase::before, .timeline__item--phase::after { display: none !important; }
+    .timeline__item--phase .timeline__date {
+      color: #34B6CE !important; font-weight: 800;
+      letter-spacing: 0.18em; font-size: 0.72rem;
+    }
+    .timeline__item--phase .timeline__title { font-size: 1.5rem; color: #FFFFFF; margin-top: 0.2rem; }
+    .timeline__item--phase .timeline__desc { color: #A2A2AB; margin-top: 0.4rem; }
 
     /* ================================================================
        NEOCLOUD COOL GRADIENT SCHEME
@@ -200,17 +234,18 @@
       </p>
       <span class="nc-hero-badge mono" data-reveal>[ NEOCLOUD SUMMIT ] · INAUGURAL · SF TECH WEEK 2026</span>
       <h1 class="page-hero__title" id="ncTitle">WHERE THE<br /><span class="h-grad">NEXT CLOUD</span><br />GETS BUILT<span class="dot-red">.</span></h1>
-      <p class="page-hero__intro">Hyperscalers built the cloud. Neoclouds are rebuilding it for AI. On October 8,
-        the founders of that new layer share one stage - with the enterprise buyers, investors, and infrastructure
-        leaders deploying capital into it.</p>
+      <p class="page-hero__intro">The neocloud market is being built right now, and the people building it will be in
+        one room on October 8. The full stack of the AI cloud economy - the neoclouds standing up GPU capacity, the
+        technology partners powering them, the enterprises deciding where to spend, and the investors funding the
+        buildout. One stage, one day, the operators and decision-makers who move this market.</p>
       <div class="page-hero__meta mono">
         <span><b>Date</b>October 8, 2026</span>
         <span><b>Venue</b>Hotel Kabuki · San Francisco, CA</span>
         <span><b>Context</b>SF Tech Week · Invite-only</span>
       </div>
       <div class="hero__ctas">
-        <a href="https://contact.ignitegtm.com/events?interest=Sponsoring" class="btn btn--solid btn--lg" data-magnetic><span>Sponsor the Summit</span></a>
-        <a href="https://contact.ignitegtm.com/events?interest=Attending" class="btn btn--ghost btn--lg" data-magnetic><span>Request an Invite</span></a>
+        <a href="https://luma.com/neocloud_summit_oct8" target="_blank" rel="noopener" class="btn btn--solid btn--lg" data-magnetic><span>Reserve Your Seat</span></a>
+        <a href="https://contact.ignitegtm.com/events?interest=Sponsoring" class="btn btn--ghost btn--lg" data-magnetic><span>Sponsor the Summit</span></a>
       </div>
       <div class="page-hero__ghost" aria-hidden="true">NEOCLOUD</div>
     </section>
@@ -226,11 +261,11 @@
         builds what comes next has never existed. Until now.</p>
       <div class="proof__stats proof__stats--three" style="margin-top: 3rem;">
         <div class="stat" data-reveal>
-          <span class="stat__num">$<span data-count="250">0</span>B+</span>
+          <span class="stat__num">$<span>250</span>B+</span>
           <span class="stat__label mono">Projected GPU-as-a-Service market by 2030 · ABI Research</span>
         </div>
         <div class="stat" data-reveal>
-          <span class="stat__num"><span data-count="250">0</span></span>
+          <span class="stat__num"><span>250</span></span>
           <span class="stat__label mono">Curated leaders in the room · seniority-screened</span>
         </div>
         <div class="stat" data-reveal>
@@ -290,41 +325,43 @@
     <!-- ══════════ 03 · THE AUDIENCE ══════════ -->
     <section class="section" id="audience" aria-labelledby="audienceTitle">
       <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 03 - Who's in the Room</p>
-      <h2 class="h-display" id="audienceTitle" data-reveal><span data-count="250">0</span> <span class="h-grad">CURATED LEADERS</span><span class="dot-red">.</span></h2>
-      <p class="body-lg studio__lede" data-reveal>AI Infra &amp; Cloud · Enterprise Tech · Data Centers &amp; Energy ·
-        Semiconductors · Storage &amp; Networking · VC / PE · Sovereign AI</p>
-      <div class="nc-bars">
-        <div class="nc-bar" data-reveal>
-          <div class="nc-bar__head mono"><span class="nc-bar__label">Enterprise Infrastructure Leaders</span><span class="nc-bar__pct">30%</span></div>
-          <div class="nc-bar__track"><div class="nc-bar__fill" style="width: 30%"></div></div>
-          <p class="nc-bar__desc">CIOs, VPs of Infrastructure, and cloud architects evaluating neocloud for AI workloads.</p>
+      <h2 class="h-display" id="audienceTitle" data-reveal><span>250</span> <span class="h-grad">CURATED LEADERS</span><span class="dot-red">.</span></h2>
+      <p class="body-lg studio__lede" data-reveal>Not a headcount — a composition. Every seat is screened for seniority and mapped
+        to the room we're building. AI Infra &amp; Cloud · Enterprise Tech · Data Centers &amp; Energy ·
+        Semiconductors · Storage &amp; Networking · VC / PE · Sovereign AI.</p>
+      <div class="nc-aud">
+        <div class="nc-aud__card" data-reveal>
+          <span class="nc-aud__pct">30<sup>%</sup></span>
+          <span class="nc-aud__label">Enterprise Infrastructure Leaders</span>
+          <p class="nc-aud__desc">CIOs, VPs of Infrastructure, and cloud architects evaluating neocloud for AI workloads.</p>
         </div>
-        <div class="nc-bar" data-reveal>
-          <div class="nc-bar__head mono"><span class="nc-bar__label">Neocloud Founders &amp; Executives</span><span class="nc-bar__pct">20%</span></div>
-          <div class="nc-bar__track"><div class="nc-bar__fill" style="width: 20%"></div></div>
-          <p class="nc-bar__desc">CEOs, CTOs, and VPs from the 10-12 companies defining the category.</p>
+        <div class="nc-aud__card" data-reveal>
+          <span class="nc-aud__pct">20<sup>%</sup></span>
+          <span class="nc-aud__label">Neocloud Founders &amp; Executives</span>
+          <p class="nc-aud__desc">CEOs, CTOs, and VPs from the 10-12 companies defining the category.</p>
         </div>
-        <div class="nc-bar" data-reveal>
-          <div class="nc-bar__head mono"><span class="nc-bar__label">Investors &amp; Analysts</span><span class="nc-bar__pct">15%</span></div>
-          <div class="nc-bar__track"><div class="nc-bar__fill" style="width: 15%"></div></div>
-          <p class="nc-bar__desc">VCs, private equity, and research analysts covering AI infrastructure.</p>
+        <div class="nc-aud__card" data-reveal>
+          <span class="nc-aud__pct">15<sup>%</sup></span>
+          <span class="nc-aud__label">Investors &amp; Analysts</span>
+          <p class="nc-aud__desc">VCs, private equity, and research analysts covering AI infrastructure.</p>
         </div>
-        <div class="nc-bar" data-reveal>
-          <div class="nc-bar__head mono"><span class="nc-bar__label">Data Center &amp; Energy Executives</span><span class="nc-bar__pct">15%</span></div>
-          <div class="nc-bar__track"><div class="nc-bar__fill" style="width: 15%"></div></div>
-          <p class="nc-bar__desc">Operators, power, cooling, and colocation - the physical layer, via iMasons.</p>
+        <div class="nc-aud__card" data-reveal>
+          <span class="nc-aud__pct">15<sup>%</sup></span>
+          <span class="nc-aud__label">Data Center &amp; Energy Executives</span>
+          <p class="nc-aud__desc">Operators, power, cooling, and colocation - the physical layer, via iMasons.</p>
         </div>
-        <div class="nc-bar" data-reveal>
-          <div class="nc-bar__head mono"><span class="nc-bar__label">Infrastructure Ecosystem</span><span class="nc-bar__pct">15%</span></div>
-          <div class="nc-bar__track"><div class="nc-bar__fill" style="width: 15%"></div></div>
-          <p class="nc-bar__desc">Storage, networking, silicon, and software - the partners neoclouds need.</p>
+        <div class="nc-aud__card" data-reveal>
+          <span class="nc-aud__pct">15<sup>%</sup></span>
+          <span class="nc-aud__label">Infrastructure Ecosystem</span>
+          <p class="nc-aud__desc">Storage, networking, silicon, and software - the partners neoclouds need.</p>
         </div>
-        <div class="nc-bar" data-reveal>
-          <div class="nc-bar__head mono"><span class="nc-bar__label">Developers &amp; Architects</span><span class="nc-bar__pct">5%</span></div>
-          <div class="nc-bar__track"><div class="nc-bar__fill" style="width: 5%"></div></div>
-          <p class="nc-bar__desc">Senior engineers building on neocloud platforms.</p>
+        <div class="nc-aud__card" data-reveal>
+          <span class="nc-aud__pct">5<sup>%</sup></span>
+          <span class="nc-aud__label">Developers &amp; Architects</span>
+          <p class="nc-aud__desc">Senior engineers building on neocloud platforms.</p>
         </div>
       </div>
+      <p class="nc-aud__foot mono" data-reveal>TARGET COMPOSITION · SENIORITY-SCREENED · 250 SEATS</p>
     </section>
 
     <!-- ══════════ 04 · THE COUNCIL ══════════ -->
@@ -335,11 +372,11 @@
         executives defining a new era of cloud infrastructure. Featured speakers, panelists, and curated lunch
         seats alongside the enterprise buyers they serve. The Council unveils on stage at the Summit.</p>
       <div class="nc-roster" data-reveal>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">01</span><span class="nc-roster__name">CoreWeave</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">02</span><span class="nc-roster__name">Lambda</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">03</span><span class="nc-roster__name">Nebius</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">04</span><span class="nc-roster__name">Crusoe</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">05</span><span class="nc-roster__name">Vultr</span></div>
+        <div class="nc-roster__seat"><span class="nc-roster__num mono">01</span><span class="nc-roster__name">Vultr</span></div>
+        <div class="nc-roster__seat"><span class="nc-roster__num mono">02</span><span class="nc-roster__name">CoreWeave</span></div>
+        <div class="nc-roster__seat"><span class="nc-roster__num mono">03</span><span class="nc-roster__name">Lambda</span></div>
+        <div class="nc-roster__seat"><span class="nc-roster__num mono">04</span><span class="nc-roster__name">Nebius</span></div>
+        <div class="nc-roster__seat"><span class="nc-roster__num mono">05</span><span class="nc-roster__name">Crusoe</span></div>
         <div class="nc-roster__seat"><span class="nc-roster__num mono">06</span><span class="nc-roster__name">NScale</span></div>
         <div class="nc-roster__seat"><span class="nc-roster__num mono">07</span><span class="nc-roster__name">RunPod</span></div>
         <div class="nc-roster__seat"><span class="nc-roster__num mono">08</span><span class="nc-roster__name">Civo</span></div>
@@ -356,9 +393,18 @@
     <section class="section" id="program" aria-labelledby="programTitle">
       <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 05 - The Program</p>
       <h2 class="h-display" id="programTitle" data-reveal>ONE DAY.<br /><span class="h-grad">EVERY LAYER</span> OF THE STACK<span class="dot-red">.</span></h2>
-      <p class="body-lg studio__lede" data-reveal>Doors 08:30-17:00 PT. All day, concurrent with the main stage:
-        the Branded Studio - professional interviews, captured by Ignite Studio. Draft agenda, subject to change.</p>
+      <p class="body-lg studio__lede" data-reveal>One stage, one day, moving up the stack - from the neoclouds standing
+        up GPU capacity, to the technology partners powering them, to the enterprises deciding where to spend. All
+        day, concurrent with the main stage: the Branded Studio - professional interviews, captured by Ignite Studio.
+        Draft agenda, subject to change.</p>
       <div class="timeline" style="max-width: 860px;">
+        <article class="timeline__item timeline__item--phase" data-reveal>
+          <p class="timeline__date mono">MORNING</p>
+          <h3 class="timeline__title">The NeoClouds</h3>
+          <p class="timeline__desc">The physical foundation of AI - data centers, energy, colocation - what inference
+            clouds want from a GPU partner, how new clouds turn raw capacity into product enterprises will actually
+            buy, and how investors are pricing the GPU ecosystem right now.</p>
+        </article>
         <article class="timeline__item" data-reveal>
           <p class="timeline__date mono">08:30</p>
           <h3 class="timeline__title">Doors Open · Coffee &amp; Innovation Row</h3>
@@ -387,10 +433,22 @@
           <h3 class="timeline__title">The Main Event · State of the NeoCloud</h3>
           <p class="timeline__desc">Panel · 4-5 Council members · 45 min.</p>
         </article>
+        <article class="timeline__item timeline__item--phase" data-reveal>
+          <p class="timeline__date mono">MIDDAY</p>
+          <h3 class="timeline__title">The Technology Partners</h3>
+          <p class="timeline__desc">Direct presentations from the companies building the hardware, storage, and
+            networking that neoclouds run on. Confirmed partners include Supermicro, AMD, and WEKA.</p>
+        </article>
         <article class="timeline__item" data-reveal>
           <p class="timeline__date mono">12:15</p>
           <h3 class="timeline__title">Curated Networking Lunch · The Gallery</h3>
-          <p class="timeline__desc">Named seats · mixed personas.</p>
+          <p class="timeline__desc">Named seats · mixed personas · real conversations.</p>
+        </article>
+        <article class="timeline__item timeline__item--phase" data-reveal>
+          <p class="timeline__date mono">AFTERNOON</p>
+          <h3 class="timeline__title">The Enterprise</h3>
+          <p class="timeline__desc">The buyers, unfiltered. A dedicated Vultr keynote plus enterprise panels on what
+            leaders actually want from AI infrastructure and what it takes to earn their business.</p>
         </article>
         <article class="timeline__item" data-reveal>
           <p class="timeline__date mono">13:30</p>
@@ -410,6 +468,11 @@
           <p class="timeline__date mono">16:00</p>
           <h3 class="timeline__title">Gallery Happy Hour</h3>
           <p class="timeline__desc">Through 17:00.</p>
+        </article>
+        <article class="timeline__item timeline__item--phase" data-reveal>
+          <p class="timeline__date mono">EVENING</p>
+          <h3 class="timeline__title">Invite-Only VIP Dinner</h3>
+          <p class="timeline__desc">Very limited seating · named seats · mixed personas · real conversations.</p>
         </article>
       </div>
     </section>
@@ -433,9 +496,16 @@
             centers, power systems, and network fabrics.</p>
           <p class="nc-partner__at mono">AT THE SUMMIT · THE FOUNDATION LAYER - DEDICATED PROGRAMMING TRACK</p>
         </article>
+        <article class="nc-partner" data-reveal>
+          <p class="nc-partner__kicker mono">TECHNOLOGY PARTNERS · CONFIRMED</p>
+          <h3>The hardware that <span class="h-grad">powers the cloud</span>.</h3>
+          <p>The companies building the hardware, storage, and networking that neoclouds run on - presenting
+            direct to the room. Confirmed partners: Supermicro, AMD, and WEKA.</p>
+          <p class="nc-partner__at mono">AT THE SUMMIT · THE TECHNOLOGY PARTNERS - MIDDAY DIRECT PRESENTATIONS</p>
+        </article>
       </div>
       <p class="mono" style="font-size: 0.66rem; color: var(--grey-dim); margin-top: 1.6rem;" data-reveal>
-        FOUNDING INFRASTRUCTURE PARTNER ARCHETYPES · AMD · SUPERMICRO</p>
+        CONFIRMED TECHNOLOGY PARTNERS · SUPERMICRO · AMD · WEKA</p>
     </section>
 
     <!-- ══════════ 07 · BUILT ON AIS PROOF ══════════ -->
@@ -482,18 +552,33 @@
       </dl>
     </section>
 
+    <!-- ══════════ MEDIA PARTNERS ══════════ -->
+    <!-- Repeatable logo strip. To add a media partner: prep a transparent PNG optically
+         matched to ~36px height, save to assets/logos/<partner-name>-logo.png, then copy
+         one <li> below. Set alt to the partner name, href to their site, and tune --lh so
+         the logo reads at the same optical size as the others. Add logo-wall__img--invert
+         only for logos that need white-on-dark inversion. -->
+    <section class="section" id="media-partners" aria-labelledby="mediaPartnersTitle">
+      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> Media Partners</p>
+      <h2 class="h-display" id="mediaPartnersTitle" data-reveal>AMPLIFYING THE<br /><span class="h-grad">NEOCLOUD CONVERSATION</span><span class="dot-red">.</span></h2>
+      <ul class="logo-wall" role="list" data-reveal>
+        <li class="logo-wall__item"><a href="https://aipressroom.com/events-calendar/" target="_blank" rel="noopener"><img src="assets/logos/aipressroom-logo.png" alt="AIPressRoom" class="logo-wall__img logo-wall__img--invert" style="--lh: 36px" width="341" height="72" loading="lazy" /></a></li>
+        <li class="logo-wall__item"><a href="https://www.timesofai.com/" target="_blank" rel="noopener"><img src="assets/logos/timesofai-logo.png" alt="Times Of AI" class="logo-wall__img logo-wall__img--invert" style="--lh: 26px" width="180" height="29" loading="lazy" /></a></li>
+      </ul>
+    </section>
+
     <!-- ══════════ CTA BAND ══════════ -->
     <section class="cta-band section-media section-media--veil" aria-label="Get involved">
       <div class="section-media__bg" aria-hidden="true">
         <img src="assets/events/ignite-room.jpg" alt="" loading="lazy" />
       </div>
-      <h2 class="cta-band__title" data-reveal>READY TO JOIN THE<br /><span class="h-grad">NEOCLOUD REVOLUTION</span><span class="dot-red">?</span></h2>
-      <p class="cta-band__sub" data-reveal>We're assembling the sponsors, partners, and thought leaders for the most
-        important new event in AI infrastructure. The first room. The first conversation. The first move belongs
-        to you.</p>
+      <h2 class="cta-band__title" data-reveal>SEATS ARE LIMITED.<br /><span class="h-grad">RESERVE YOURS NOW</span><span class="dot-red">.</span></h2>
+      <p class="cta-band__sub" data-reveal>If you build, power, buy, or fund AI infrastructure, this is your room. A curated
+        networking lunch, a Gallery happy hour, and an invite-only VIP dinner with very limited seating - named
+        seats, mixed personas, real conversations.</p>
       <div class="cta-band__actions" data-reveal>
-        <a href="https://contact.ignitegtm.com/events?interest=Sponsoring" class="btn btn--solid btn--lg" data-magnetic><span>Sponsor the Summit</span></a>
-        <a href="https://contact.ignitegtm.com/events?interest=Attending" class="btn btn--ghost btn--lg" data-magnetic><span>Request an Invite</span></a>
+        <a href="https://luma.com/neocloud_summit_oct8" target="_blank" rel="noopener" class="btn btn--solid btn--lg" data-magnetic><span>Reserve Your Seat</span></a>
+        <a href="https://contact.ignitegtm.com/events?interest=Sponsoring" class="btn btn--ghost btn--lg" data-magnetic><span>Sponsor the Summit</span></a>
         <a href="https://calendly.com/ignitegtm/meeting-30m-with-bill-barry" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" data-magnetic><span>Book a Call with Bill</span></a>
       </div>
     </section>

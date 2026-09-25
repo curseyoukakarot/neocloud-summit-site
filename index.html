@@ -14,11 +14,12 @@
   <script>!function(key) {if (window.reb2b) return;window.reb2b = {loaded: true};var s = document.createElement("script");s.async = true;s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";document.getElementsByTagName("script")[0].parentNode.insertBefore(s, document.getElementsByTagName("script")[0]);}("R6G5YH889765");</script>
   <!-- End RB2B -->
 
-  <title>NeoCloud Summit 2026 - October 8 · San Francisco | IgniteGTM</title>
-  <meta name="description" content="Where the next cloud gets built. The inaugural NeoCloud Summit - October 8, 2026 at Hotel Kabuki, San Francisco, during SF Tech Week. 10-12 neocloud CEOs, one stage, 200-250 curated leaders." />
+  <title>Neocloud Summit 2026 · October 8 · San Francisco | IgniteGTM</title>
+  <meta name="description" content="Where the next cloud gets built. Neocloud Summit · October 8, 2026 · Hotel Kabuki, San Francisco · SF Tech Week. 30+ speakers from AMD, Cerebras, Supermicro, WEKA, SoftBank, Morgan Stanley, Cisco, and more. One stage, one day." />
+  <!-- TODO(domain): point canonical + og:url at the custom domain once it's chosen -->
   <link rel="canonical" href="https://www.ignitegtm.com/neocloud.html" />
-  <meta property="og:title" content="NeoCloud Summit 2026 - Where the Next Cloud Gets Built" />
-  <meta property="og:description" content="October 8, 2026 · Hotel Kabuki, San Francisco · SF Tech Week. The inaugural gathering of the neocloud ecosystem - founders, enterprise buyers, and the investors funding what comes next." />
+  <meta property="og:title" content="Neocloud Summit 2026 · Where the Next Cloud Gets Built" />
+  <meta property="og:description" content="October 8, 2026 · Hotel Kabuki, San Francisco · SF Tech Week. The neoclouds, the partners powering them, the enterprises buying from them, and the investors funding the buildout. One room, one day." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.ignitegtm.com/neocloud.html" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -31,91 +32,19 @@
   {
     "@context": "https://schema.org",
     "@type": "Event",
-    "name": "NeoCloud Summit 2026",
-    "description": "The inaugural NeoCloud Summit - where the next cloud gets built. 10-12 neocloud CEOs on one stage with 200-250 curated enterprise, investor, and infrastructure leaders, during SF Tech Week.",
-    "startDate": "2026-10-08",
+    "name": "Neocloud Summit 2026",
+    "description": "Where the next cloud gets built. One day, one stage: the neoclouds, the silicon and infrastructure partners powering them, the enterprises buying from them, and the investors funding the buildout.",
+    "startDate": "2026-10-08T08:00:00-07:00",
+    "endDate": "2026-10-08T18:30:00-07:00",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "eventStatus": "https://schema.org/EventScheduled",
     "location": { "@type": "Place", "name": "Hotel Kabuki", "address": { "@type": "PostalAddress", "streetAddress": "1625 Post St", "addressLocality": "San Francisco", "addressRegion": "CA", "addressCountry": "US" } },
     "organizer": { "@type": "Organization", "name": "IgniteGTM", "url": "https://www.ignitegtm.com" },
+    "offers": { "@type": "Offer", "url": "https://luma.com/neocloud_summit_oct8" },
     "url": "https://www.ignitegtm.com/neocloud.html"
   }
   </script>
   <style>
-    /* NeoCloud page-specific components (inline, same pattern as Studio's override) */
-    .nc-roster {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 10px;
-      margin-top: 2.2rem;
-    }
-    .nc-roster__seat {
-      border: 1px solid var(--line);
-      background: var(--panel);
-      padding: 1rem 1.1rem;
-      display: flex;
-      align-items: baseline;
-      gap: 0.7em;
-      border-radius: 3px;
-    }
-    .nc-roster__num { font-size: 0.62rem; color: var(--grey-dim); }
-    .nc-roster__name { font-weight: 800; font-size: 0.92rem; letter-spacing: 0.01em; text-transform: uppercase; display: flex; flex-direction: column; gap: 0.35em; }
-    .nc-roster__tag { font-size: 0.54rem; font-weight: 700; letter-spacing: 0.12em; color: #34B6CE; }
-    .nc-roster__seat--keynote { border-color: rgba(52,182,206,0.55); background: rgba(52,182,206,0.07); }
-    /* ── Audience: editorial "who's in the room" intelligence map ── */
-    .nc-aud { margin-top: 2.6rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
-    .nc-aud__card {
-      position: relative; border: 1px solid var(--line); background: var(--panel);
-      border-radius: 4px; padding: clamp(1.5rem, 2.4vw, 2.1rem);
-      display: flex; flex-direction: column; gap: 0.5rem; overflow: hidden;
-    }
-    .nc-aud__card::before {
-      content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
-      background: var(--nc-grad, linear-gradient(180deg,#34B6CE,#14A14A));
-    }
-    .nc-aud__pct {
-      font-size: clamp(2.8rem, 5vw, 3.8rem); font-weight: 900; line-height: 0.95;
-      letter-spacing: -0.02em; font-style: italic;
-      background: linear-gradient(100deg,#5CD0E6 0%,#3FC66B 100%);
-      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
-    }
-    .nc-aud__pct sup { font-size: 0.4em; font-weight: 800; vertical-align: super; -webkit-text-fill-color: inherit; }
-    .nc-aud__label { font-size: 0.82rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: var(--white); }
-    .nc-aud__desc { font-size: 0.9rem; color: #D4D4DA; font-weight: 400; line-height: 1.55; margin-top: 0.1rem; }
-    .nc-aud__foot { margin-top: 2rem; font-size: 0.68rem; color: #8A8A93; }
-    .nc-partner-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin-top: 2.4rem; }
-    .nc-partner {
-      border: 1px solid var(--line); background: var(--panel); border-radius: 4px;
-      padding: clamp(1.6rem, 2.5vw, 2.4rem);
-    }
-    .nc-partner__kicker { font-size: 0.66rem; color: var(--yellow); margin-bottom: 1rem; }
-    .nc-partner h3 { font-weight: 900; text-transform: uppercase; font-size: 1.35rem; line-height: 1.1; margin-bottom: 0.8rem; }
-    .nc-partner p { color: var(--grey); font-weight: 350; font-size: 0.95rem; }
-    .nc-partner__at { margin-top: 1.2rem; padding-top: 1.1rem; border-top: 1px solid var(--line); font-size: 0.7rem; color: var(--white); }
-    .nc-hero-badge {
-      display: inline-block; margin-bottom: 1.4rem;
-      border: 1px solid var(--yellow); color: var(--yellow);
-      font-size: 0.7rem; padding: 0.5em 1em; border-radius: 2px;
-    }
-    /* Program phase-header rows (Morning / Midday / Afternoon / Evening) */
-    .timeline__item--phase {
-      margin: 2.6rem 0 0.6rem !important; padding: 1.3rem 1.4rem !important;
-      border: 1px solid rgba(52,182,206,0.45) !important;
-      border-left: 3px solid #34B6CE !important;
-      background: rgba(52,182,206,0.06) !important;
-      border-radius: 4px !important;
-    }
-    .timeline__item--phase:first-child { margin-top: 0.6rem !important; }
-    .timeline__item--phase:last-child { margin-bottom: 0.6rem !important; }
-    /* neutralize any base timeline connector/marker on phase cards so all four match */
-    .timeline__item--phase::before, .timeline__item--phase::after { display: none !important; }
-    .timeline__item--phase .timeline__date {
-      color: #34B6CE !important; font-weight: 800;
-      letter-spacing: 0.18em; font-size: 0.72rem;
-    }
-    .timeline__item--phase .timeline__title { font-size: 1.5rem; color: #FFFFFF; margin-top: 0.2rem; }
-    .timeline__item--phase .timeline__desc { color: #A2A2AB; margin-top: 0.4rem; }
-
     /* ================================================================
        NEOCLOUD COOL GRADIENT SCHEME
        Lightning Blue #34B6CE → Fresh Green #14A14A
@@ -149,21 +78,10 @@
     }
 
     /* ── Accent overrides (fire yellow → cool blue) ── */
-    .nc-bar__pct         { color: var(--nc-blue) !important; }
-    .nc-partner__kicker  { color: var(--nc-blue) !important; }
-    .nc-hero-badge       { color: var(--nc-blue) !important; border-color: var(--nc-blue) !important; }
-    .nc-bar__fill        { background: var(--nc-grad) !important; }
-
-    /* ── Scroll progress bar ── */
     .scroll-progress     { background: var(--nc-grad) !important; }
-
-    /* ── Eyebrow slash ── */
     .eyebrow__slash      { color: var(--nc-blue) !important; }
-
-    /* ── Timeline active marker ── */
-    .timeline__item--now .timeline__date { color: var(--nc-blue) !important; }
-
-    /* ── Stat numbers (inherit fire grad → cool) ── */
+    .page-hero__crumb .sep { color: var(--nc-blue); }
+    .stat                { border-left-color: var(--nc-blue); }
     .stat__num { background: var(--nc-grad) !important;
       -webkit-background-clip: text !important;
       -webkit-text-fill-color: transparent !important;
@@ -174,10 +92,122 @@
     .page-hero__title,
     .h-display,
     .detail-row__title,
-    .nc-partner h3,
     .cta-band__title {
       font-style: italic !important;
       font-weight: 900 !important;
+    }
+
+    .nc-hero-badge {
+      display: inline-block; margin-bottom: 1.4rem;
+      border: 1px solid var(--nc-blue); color: var(--nc-blue);
+      font-size: 0.7rem; padding: 0.5em 1em; border-radius: 2px;
+    }
+    .nc-foot { font-size: 0.66rem; color: var(--grey-dim); margin-top: 1.6rem; }
+
+    /* ── 01 · Why now: four forces ── */
+    .nc-forces-label { font-size: 0.72rem; color: var(--nc-blue); margin: 4.5rem 0 1.2rem; }
+    .nc-forces { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .nc-force {
+      border: 1px solid var(--line); background: var(--panel); border-radius: 4px;
+      padding: 1.5rem 1.4rem; position: relative; overflow: hidden;
+    }
+    .nc-force::before {
+      content: ""; position: absolute; left: 0; top: 0; right: 0; height: 2px;
+      background: var(--nc-grad);
+    }
+    .nc-force h3 { font-size: 1.05rem; text-transform: uppercase; line-height: 1.15; margin-bottom: 0.6rem; }
+    .nc-force p { color: var(--grey); font-weight: 350; font-size: 0.92rem; line-height: 1.5; }
+    .nc-forces-close { margin-top: 1.6rem; font-weight: 700; font-size: 1.05rem; max-width: 40em; }
+
+    /* ── 02 · Speakers ── */
+    .nc-cos {
+      display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1.1rem;
+      padding: 1.6rem 0; margin-bottom: 2.4rem;
+      border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    }
+    .nc-cos__label { font-size: 0.62rem; color: var(--grey-dim); margin-right: 0.4rem; }
+    .nc-cos__item {
+      font-weight: 900; font-style: italic; text-transform: uppercase;
+      font-size: clamp(1.05rem, 1.9vw, 1.55rem); letter-spacing: 0.01em; line-height: 1.2;
+    }
+    .nc-cos__item:not(:last-child)::after { content: "/"; color: var(--nc-blue); margin-left: 1.1rem; font-style: normal; font-weight: 400; }
+    .nc-speakers {
+      display: grid; gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
+    }
+    .nc-speaker {
+      border: 1px solid var(--line); background: var(--panel); border-radius: 4px;
+      padding: 1.15rem 1.2rem 1.25rem;
+      display: flex; flex-direction: column; gap: 0.25rem;
+      transition: border-color 0.25s;
+    }
+    .nc-speaker:hover { border-color: rgba(52, 182, 206, 0.55); }
+    .nc-speaker__co { font-size: 0.62rem; color: var(--nc-blue); display: flex; justify-content: space-between; gap: 0.6rem; }
+    .nc-speaker__tag { color: var(--nc-green); }
+    .nc-speaker__name { font-size: 1.12rem; text-transform: uppercase; line-height: 1.15; margin-top: 0.35rem; }
+    .nc-speaker__title { font-size: 0.86rem; color: var(--grey); font-weight: 350; line-height: 1.4; }
+
+    /* ── 04 · Program ── */
+    .nc-glance {
+      display: grid; grid-template-columns: repeat(6, minmax(0, 1fr));
+      border: 1px solid var(--line); border-radius: 4px; overflow: hidden;
+      background: var(--panel);
+    }
+    .nc-glance__item { padding: 1.3rem 1.2rem; border-left: 1px solid var(--line); }
+    .nc-glance__item:first-child { border-left: 0; }
+    .nc-glance__time {
+      display: block; font-weight: 900; font-style: italic; font-size: 1.25rem; line-height: 1.1;
+      background: var(--nc-grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .nc-glance__label { display: block; margin-top: 0.5rem; font-size: 0.6rem; color: var(--white); line-height: 1.5; }
+    .nc-agenda { margin-top: 3rem; border-top: 1px solid var(--line); max-width: 980px; }
+    .nc-agenda__row {
+      display: grid; grid-template-columns: 6.5rem 5.8rem minmax(0, 1fr);
+      column-gap: 1.4rem; align-items: baseline;
+      padding: 1.3rem 0; border-bottom: 1px solid var(--line);
+    }
+    .nc-agenda__time { font-size: 0.72rem; color: var(--nc-blue); }
+    .nc-agenda__type {
+      justify-self: start; font-size: 0.56rem; color: var(--grey);
+      border: 1px solid var(--line); border-radius: 2px; padding: 0.35em 0.7em;
+    }
+    .nc-agenda__type--keynote { color: var(--nc-green); border-color: rgba(20, 161, 74, 0.6); }
+    .nc-agenda__title { font-size: 1.08rem; line-height: 1.3; }
+    .nc-agenda__who { margin-top: 0.4rem; font-size: 0.9rem; color: var(--grey); font-weight: 350; line-height: 1.5; }
+    .nc-agenda__who b { color: var(--white); font-weight: 600; }
+    .nc-agenda__row--break { background: rgba(52, 182, 206, 0.05); }
+    .nc-agenda__row--break .nc-agenda__title { color: var(--grey); }
+
+    /* ── 05 · Partners: white logos on black ── */
+    .nc-sponsors {
+      list-style: none; background: #000; border: 1px solid var(--line); border-radius: 4px;
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-evenly;
+      gap: 2.4rem 3.5rem; padding: clamp(2.2rem, 4vw, 3.4rem) clamp(1.5rem, 4vw, 3rem);
+    }
+    .nc-sponsors img { height: var(--lh, 40px); width: auto; filter: brightness(0) invert(1); }
+    .nc-editorial { margin-top: 1.8rem; color: var(--grey); font-weight: 350; max-width: 44em; }
+    .nc-editorial b { color: var(--white); font-weight: 600; }
+
+    @media (max-width: 1024px) {
+      .nc-forces { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .nc-glance { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .nc-glance__item:nth-child(4) { border-left: 0; }
+      .nc-glance__item:nth-child(n+4) { border-top: 1px solid var(--line); }
+    }
+    @media (max-width: 640px) {
+      .nc-forces { grid-template-columns: 1fr; }
+      .nc-glance { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .nc-glance__item:nth-child(4) { border-left: 1px solid var(--line); }
+      .nc-glance__item:nth-child(odd) { border-left: 0; }
+      .nc-glance__item:nth-child(n+3) { border-top: 1px solid var(--line); }
+      .nc-agenda__row { grid-template-columns: auto minmax(0, 1fr); row-gap: 0.6rem; column-gap: 1rem; }
+      .nc-agenda__body { grid-column: 1 / -1; }
+      .nc-sponsors { gap: 2rem 2.4rem; }
+      .nc-speakers { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+      .nc-speaker { padding: 0.95rem 0.9rem 1rem; }
+      .nc-speaker__co { flex-direction: column; gap: 0.2rem; font-size: 0.56rem; }
+      .nc-speaker__name { font-size: 0.95rem; overflow-wrap: anywhere; }
+      .nc-speaker__title { font-size: 0.78rem; }
     }
   </style>
 </head>
@@ -192,31 +222,29 @@
   <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a href="https://www.ignitegtm.com/index.html" class="nav__logo" aria-label="IgniteGTM home">
+      <a href="https://www.ignitegtm.com/" class="nav__logo" aria-label="IgniteGTM home">
         <img src="assets/ignite-logo.png" alt="IGN!TE" />
         <span class="nav__logo-sub mono">GTM</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="https://www.ignitegtm.com/index.html#ecosystem">Ecosystem</a>
-        <a href="https://www.ignitegtm.com/events.html" class="is-here" aria-current="page">Events</a>
-        <a href="https://www.ignitegtm.com/studio.html">Studio</a>
-        <a href="https://www.ignitegtm.com/advisory.html">Advisory</a>
-        <a href="https://www.ignitegtm.com/index.html#insights">Insights</a>
-        <a href="https://www.ignitegtm.com/team.html">Team</a>
+        <a href="#why">Why</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#program">Program</a>
+        <a href="#partners">Partners</a>
+        <a href="#venue">Venue</a>
       </nav>
-      <a href="https://contact.ignitegtm.com/events?interest=Sponsoring" class="btn btn--solid btn--nav"><span>Sponsor</span></a>
+      <a href="https://luma.com/neocloud_summit_oct8" target="_blank" rel="noopener" class="btn btn--solid btn--nav"><span>Reserve Seat</span></a>
       <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <nav aria-label="Mobile">
-      <a href="https://www.ignitegtm.com/index.html#ecosystem">Ecosystem</a>
-      <a href="https://www.ignitegtm.com/events.html">Events</a>
-      <a href="https://www.ignitegtm.com/studio.html">Studio</a>
-      <a href="https://www.ignitegtm.com/advisory.html">Advisory</a>
-      <a href="https://www.ignitegtm.com/index.html#insights">Insights</a>
-      <a href="https://www.ignitegtm.com/team.html">Team</a>
-      <a href="https://contact.ignitegtm.com/events?interest=Sponsoring" class="mobile-menu__cta">Sponsor the Summit</a>
+      <a href="#why">Why</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#program">Program</a>
+      <a href="#partners">Partners</a>
+      <a href="#venue">Venue</a>
+      <a href="https://luma.com/neocloud_summit_oct8" target="_blank" rel="noopener" class="mobile-menu__cta">Reserve Your Seat</a>
     </nav>
   </div>
   <main>
@@ -228,343 +256,356 @@
           alt="" fetchpriority="high" />
       </div>
       <p class="page-hero__crumb mono">
-        <a href="https://www.ignitegtm.com/index.html">IGNITEGTM</a> <span class="sep">//</span>
-        <a href="https://www.ignitegtm.com/events.html">EVENTS</a> <span class="sep">//</span>
-        <span class="here">NEOCLOUD SUMMIT</span>
+        <a href="https://www.ignitegtm.com/">IGNITEGTM</a> <span class="sep">//</span>
+        <span>PRESENTS</span> <span class="sep">//</span>
+        <span class="here">NEOCLOUD SUMMIT 2026</span>
       </p>
       <span class="nc-hero-badge mono" data-reveal>[ NEOCLOUD SUMMIT ] · INAUGURAL · SF TECH WEEK 2026</span>
       <h1 class="page-hero__title" id="ncTitle">WHERE THE<br /><span class="h-grad">NEXT CLOUD</span><br />GETS BUILT<span class="dot-red">.</span></h1>
-      <p class="page-hero__intro">The neocloud market is being built right now, and the people building it will be in
-        one room on October 8. The full stack of the AI cloud economy - the neoclouds standing up GPU capacity, the
-        technology partners powering them, the enterprises deciding where to spend, and the investors funding the
-        buildout. One stage, one day, the operators and decision-makers who move this market.</p>
+      <p class="page-hero__intro">Neoclouds, the GPU-native clouds built for AI, are becoming the infrastructure AI
+        companies run on. On October 8, the whole ecosystem is in one room: the neoclouds, the partners powering
+        them, the enterprises buying from them, and the investors funding the buildout.</p>
       <div class="page-hero__meta mono">
         <span><b>Date</b>October 8, 2026</span>
-        <span><b>Venue</b>Hotel Kabuki · San Francisco, CA</span>
-        <span><b>Context</b>SF Tech Week · Invite-only</span>
+        <span><b>Venue</b>Hotel Kabuki · San Francisco</span>
+        <span><b>Main Stage</b>9:00 AM - 4:00 PM · Networking to follow</span>
       </div>
       <div class="hero__ctas">
         <a href="https://luma.com/neocloud_summit_oct8" target="_blank" rel="noopener" class="btn btn--solid btn--lg" data-magnetic><span>Reserve Your Seat</span></a>
-        <a href="https://contact.ignitegtm.com/events?interest=Sponsoring" class="btn btn--ghost btn--lg" data-magnetic><span>Sponsor the Summit</span></a>
+        <a href="https://ignite.docsend.com/view/fwku8d42vn6q75yf" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" data-magnetic><span>Sponsor Prospectus</span></a>
       </div>
       <div class="page-hero__ghost" aria-hidden="true">NEOCLOUD</div>
     </section>
 
-    <!-- ══════════ 01 · THE THESIS ══════════ -->
-    <section class="section" id="thesis" aria-labelledby="thesisTitle">
-      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 01 - The Thesis</p>
-      <h2 class="h-display" id="thesisTitle" data-reveal>HYPERSCALERS BUILT THE CLOUD.<br />
-        <span class="h-grad">NEOCLOUDS ARE REBUILDING IT</span><br />FOR AI<span class="dot-red">.</span></h2>
-      <p class="body-lg studio__lede" data-reveal>A new class of cloud-infrastructure companies is redefining how
-        the world builds, trains, and deploys AI. Not challengers - architects of a new layer, purpose-built for
-        the AI economy. CoreWeave crossed $5B ARR faster than any cloud platform in history - and the room that
-        builds what comes next has never existed. Until now.</p>
-      <div class="proof__stats proof__stats--three" style="margin-top: 3rem;">
+    <!-- ══════════ 01 · WHY NEOCLOUD SUMMIT + WHY NOW ══════════ -->
+    <section class="section" id="why" aria-labelledby="whyTitle">
+      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 01 - Why Neocloud Summit</p>
+      <h2 class="h-display" id="whyTitle" data-reveal>A NEW LAYER OF THE CLOUD<br />
+        <span class="h-grad">IS BEING BUILT</span> IN REAL TIME<span class="dot-red">.</span></h2>
+      <p class="body-lg studio__lede" data-reveal>Neoclouds sit between the chipmakers and data centers on one side
+        and the model builders and enterprises on the other. The decisions being made now, on how they get built,
+        financed, secured, and bought, will shape the next decade of AI. This is not a survey of AI in general.
+        It's one focused day on the companies and decisions building the next cloud.</p>
+      <div class="proof__stats proof__stats--three">
         <div class="stat" data-reveal>
-          <span class="stat__num">$<span>250</span>B+</span>
-          <span class="stat__label mono">Projected GPU-as-a-Service market by 2030 · ABI Research</span>
+          <span class="stat__num">50+</span>
+          <span class="stat__label mono">Neoclouds in the room</span>
         </div>
         <div class="stat" data-reveal>
-          <span class="stat__num"><span>250</span></span>
-          <span class="stat__label mono">Curated leaders in the room · seniority-screened</span>
+          <span class="stat__num">250-300</span>
+          <span class="stat__label mono">Senior AI infrastructure leaders</span>
         </div>
         <div class="stat" data-reveal>
-          <span class="stat__num"><span data-count="12">0</span></span>
-          <span class="stat__label mono">Neocloud CEOs · one stage · for the first time</span>
+          <span class="stat__num">30+</span>
+          <span class="stat__label mono">Speakers · one stage · one day</span>
         </div>
       </div>
+
+      <p class="nc-forces-label mono" data-reveal>// Why now</p>
+      <div class="nc-forces">
+        <article class="nc-force" data-reveal>
+          <h3>Inference is outrunning capacity</h3>
+          <p>Demand is scaling faster than supply, pulling a wave of new clouds into the market.</p>
+        </article>
+        <article class="nc-force" data-reveal>
+          <h3>Power sets the pace</h3>
+          <p>Power, land, and network are now the real limits on how fast anyone can build.</p>
+        </article>
+        <article class="nc-force" data-reveal>
+          <h3>Capital is picking winners</h3>
+          <p>Money is reshaping who wins, while the financing model for compute is still unsettled.</p>
+        </article>
+        <article class="nc-force" data-reveal>
+          <h3>Enterprises are going to production</h3>
+          <p>Pilots are becoming production, raising the bar on cost, security, and reliability.</p>
+        </article>
+      </div>
+      <p class="nc-forces-close" data-reveal>The window to understand this market, and to be positioned in it, is open now.</p>
     </section>
 
-    <!-- ══════════ 02 · FIVE VECTORS ══════════ -->
-    <section class="section" id="vectors" aria-labelledby="vectorsTitle">
-      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 02 - Why This Room</p>
-      <h2 class="h-display" id="vectorsTitle" data-reveal>THIS ROOM HAS<br /><span class="h-grad">NEVER EXISTED</span> BEFORE<span class="dot-red">.</span></h2>
+    <!-- ══════════ 02 · SPEAKERS ══════════
+         Source: MASTER AGENDA 9/24/26 (confirmed-speaker column). Name, title,
+         company only - nothing else from the tracker belongs on a public page. -->
+    <section class="section" id="speakers" aria-labelledby="speakersTitle">
+      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 02 - Speakers</p>
+      <h2 class="h-display" id="speakersTitle" data-reveal>THE PEOPLE BUILDING<br /><span class="h-grad">THE NEXT CLOUD</span><span class="dot-red">.</span></h2>
+      <p class="body-lg studio__lede" data-reveal>Operators, builders, and executives from across the stack. One stage.</p>
+
+      <div class="nc-cos" data-reveal>
+        <span class="nc-cos__label mono">Speakers from</span>
+        <span class="nc-cos__item">AMD</span>
+        <span class="nc-cos__item">Cerebras</span>
+        <span class="nc-cos__item">Supermicro</span>
+        <span class="nc-cos__item">WEKA</span>
+        <span class="nc-cos__item">SoftBank</span>
+        <span class="nc-cos__item">Morgan Stanley</span>
+        <span class="nc-cos__item">Cisco</span>
+        <span class="nc-cos__item">Vultr</span>
+        <span class="nc-cos__item">DigitalOcean</span>
+        <span class="nc-cos__item">ServiceNow</span>
+        <span class="nc-cos__item">SambaNova</span>
+        <span class="nc-cos__item">Together AI</span>
+        <span class="nc-cos__item">iMasons</span>
+      </div>
+
+      <div class="nc-speakers" data-reveal>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>AMD</span><span class="nc-speaker__tag">Keynote</span></p><h3 class="nc-speaker__name">Nicola Tan</h3><p class="nc-speaker__title">Go-to-Market</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Cerebras</span></p><h3 class="nc-speaker__name">Andy Hock</h3><p class="nc-speaker__title">Chief Strategy Officer</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>AMD</span></p><h3 class="nc-speaker__name">Matt Oullette</h3><p class="nc-speaker__title">Sr. Director, AI Product Management</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Supermicro</span></p><h3 class="nc-speaker__name">Carl Brown</h3><p class="nc-speaker__title">VP of Sales</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>WEKA</span></p><h3 class="nc-speaker__name">Liran Zvibel</h3><p class="nc-speaker__title">CEO</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>WEKA</span></p><h3 class="nc-speaker__name">Val Bercovici</h3><p class="nc-speaker__title">Chief AI Officer</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>SoftBank / Infrinia</span></p><h3 class="nc-speaker__name">Rajeev Koodli</h3><p class="nc-speaker__title">SVP</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Morgan Stanley</span></p><h3 class="nc-speaker__name">Rahul Varshneya</h3><p class="nc-speaker__title">Managing Director</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Cisco</span></p><h3 class="nc-speaker__name">Vladimirs Sazonovs</h3><p class="nc-speaker__title">Global Infrastructure Funds</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Vultr</span><span class="nc-speaker__tag">Keynote</span></p><h3 class="nc-speaker__name">Kevin Cochrane</h3><p class="nc-speaker__title">CMO</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>DigitalOcean</span></p><h3 class="nc-speaker__name">Syona Sarma</h3><p class="nc-speaker__title">VP of Hardware</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>ServiceNow</span></p><h3 class="nc-speaker__name">Vyoma Gajjar</h3><p class="nc-speaker__title">Sr. Principal AI Architect</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>SambaNova</span></p><h3 class="nc-speaker__name">Rob Naidoff</h3><p class="nc-speaker__title">VP Americas, GTM</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Together AI</span></p><h3 class="nc-speaker__name">Simran Arora</h3><p class="nc-speaker__title">Principal Research Scientist</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>iMasons</span><span class="nc-speaker__tag">Keynote</span></p><h3 class="nc-speaker__name">Dean Nelson</h3><p class="nc-speaker__title">Chairman, iMasons · CEO, Cato Digital</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Upscale AI</span><span class="nc-speaker__tag">Keynote</span></p><h3 class="nc-speaker__name">Aravindh Srikumar</h3><p class="nc-speaker__title">VP of Marketing</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Tensor Machines</span><span class="nc-speaker__tag">Keynote</span></p><h3 class="nc-speaker__name">Muneeb Rasool</h3><p class="nc-speaker__title">Founder &amp; CEO</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>ex-Capital One</span></p><h3 class="nc-speaker__name">Victor Kuarsingh</h3><p class="nc-speaker__title">Formerly Capital One</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>TransUnion</span></p><h3 class="nc-speaker__name">Arzoo Mittal</h3><p class="nc-speaker__title">Technical Program Manager</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Lightning AI</span></p><h3 class="nc-speaker__name">Drew Pletcher</h3><p class="nc-speaker__title">Principal Architect</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Zyphra</span></p><h3 class="nc-speaker__name">Erik Norden</h3><p class="nc-speaker__title">Executive, AGI Technology &amp; Strategy</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>GMI Cloud</span></p><h3 class="nc-speaker__name">Alex Yeh</h3><p class="nc-speaker__title">CEO</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Massed Compute</span></p><h3 class="nc-speaker__name">Craig Geringer</h3><p class="nc-speaker__title">SVP</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Silicon Data</span></p><h3 class="nc-speaker__name">Steven Hou</h3><p class="nc-speaker__title">Head of Research</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Compute Exchange</span></p><h3 class="nc-speaker__name">Carmen Li</h3><p class="nc-speaker__title">CEO</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Prem AI</span></p><h3 class="nc-speaker__name">Simone Giacomelli</h3><p class="nc-speaker__title">CEO</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Jazz Computing</span></p><h3 class="nc-speaker__name">Lamia Youseff</h3><p class="nc-speaker__title">CEO</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Moonshot Energy</span></p><h3 class="nc-speaker__name">Bryan Lubin</h3><p class="nc-speaker__title">Managing Director</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Panadina</span></p><h3 class="nc-speaker__name">Forrest Heath</h3><p class="nc-speaker__title">Co-founder</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Remanie.ai</span></p><h3 class="nc-speaker__name">Tiffany Wilson</h3><p class="nc-speaker__title">CEO</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Qumulus</span></p><h3 class="nc-speaker__name">Victor Ghadban</h3><p class="nc-speaker__title">Principal Architect</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>Acasia</span></p><h3 class="nc-speaker__name">Matt Renner</h3><p class="nc-speaker__title">Chief Commercial Officer</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>IgniteGTM</span></p><h3 class="nc-speaker__name">Sebastian Spitzer</h3><p class="nc-speaker__title">Advisor</p></article>
+        <article class="nc-speaker"><p class="nc-speaker__co mono"><span>IgniteGTM</span><span class="nc-speaker__tag">Host</span></p><h3 class="nc-speaker__name">Bill Barry</h3><p class="nc-speaker__title">CEO</p></article>
+      </div>
+      <p class="nc-foot mono" data-reveal>More speakers to be announced.</p>
+    </section>
+
+    <!-- ══════════ 03 · THE ROOM (messaging pillars) ══════════ -->
+    <section class="section" id="room" aria-labelledby="roomTitle">
+      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 03 - The Room</p>
+      <h2 class="h-display" id="roomTitle" data-reveal>THIS ROOM HAS<br /><span class="h-grad">NEVER EXISTED</span> BEFORE<span class="dot-red">.</span></h2>
+      <p class="body-lg studio__lede" data-reveal>Neocloud Summit is intentionally curated: the people building, buying,
+        and financing the next cloud, able to find each other in one day.</p>
 
       <article class="detail-row" data-reveal>
         <span class="detail-row__num" aria-hidden="true">01</span>
-        <h3 class="detail-row__title">Access the <span class="h-grad">Ecosystem</span></h3>
+        <h3 class="detail-row__title"><span class="h-grad">50+</span> Neoclouds</h3>
         <div class="detail-row__body">
-          <p>10-12 neocloud CEOs share one stage for the first time. Your brand sits at the center of the
-            market being built around them.</p>
+          <p>More than 50 neoclouds in one room, alongside the sponsors, partners, and collaborators they build with.</p>
         </div>
       </article>
       <article class="detail-row" data-reveal>
         <span class="detail-row__num" aria-hidden="true">02</span>
         <h3 class="detail-row__title">Decision-Makers <span class="h-grad">Only</span></h3>
         <div class="detail-row__body">
-          <p>200-250 attendees curated for seniority - CIOs, VPs, architects, and investors actively deploying
-            capital into AI infrastructure. No badge-scanners. No tourists.</p>
+          <p>Operators, builders, and executives of the leading infrastructure providers, plus the enterprise buyers
+            moving AI into production and the investors underwriting the buildout. 250-300 senior leaders.</p>
         </div>
       </article>
       <article class="detail-row" data-reveal>
         <span class="detail-row__num" aria-hidden="true">03</span>
         <h3 class="detail-row__title">Data-Driven <span class="h-grad">Content</span></h3>
         <div class="detail-row__body">
-          <p>An exclusive SemiAnalysis Intelligence Briefing on neocloud economics and tokenomics - the data that
-            moves the market, presented in the room where it matters.</p>
+          <p>Pointed conversations, not pitches. Tight sessions on token economics, compute financing, power, and
+            security, built to stay high-signal from open to close.</p>
         </div>
       </article>
       <article class="detail-row" data-reveal>
         <span class="detail-row__num" aria-hidden="true">04</span>
-        <h3 class="detail-row__title">The Builders' <span class="h-grad">Community</span></h3>
+        <h3 class="detail-row__title">The Builders <span class="h-grad">Community</span></h3>
         <div class="detail-row__body">
-          <p>Infrastructure Masons brings the global community of hyperscaler and data-center executives - the
-            people who build and operate the physical layer the neocloud runs on.</p>
+          <p>Neoclouds, data centers, colocation providers, and technology partners, working the same problem in the
+            same room.</p>
         </div>
       </article>
       <article class="detail-row" data-reveal>
         <span class="detail-row__num" aria-hidden="true">05</span>
-        <h3 class="detail-row__title">Production <span class="h-grad">Value</span></h3>
+        <h3 class="detail-row__title">Full Production <span class="h-grad">Stage</span></h3>
         <div class="detail-row__body">
-          <p>A full production stage in the heart of San Francisco - every keynote captured in cinematic quality
-            by Ignite Studio, with an all-day branded studio running concurrent interviews.</p>
+          <p>A full production stage in San Francisco. Every keynote captured, plus 1-on-1 interviews all day in
+            Ignite Studio.</p>
         </div>
       </article>
     </section>
 
-    <!-- ══════════ 03 · THE AUDIENCE ══════════ -->
-    <section class="section" id="audience" aria-labelledby="audienceTitle">
-      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 03 - Who's in the Room</p>
-      <h2 class="h-display" id="audienceTitle" data-reveal><span>250</span> <span class="h-grad">CURATED LEADERS</span><span class="dot-red">.</span></h2>
-      <p class="body-lg studio__lede" data-reveal>Not a headcount — a composition. Every seat is screened for seniority and mapped
-        to the room we're building. AI Infra &amp; Cloud · Enterprise Tech · Data Centers &amp; Energy ·
-        Semiconductors · Storage &amp; Networking · VC / PE · Sovereign AI.</p>
-      <div class="nc-aud">
-        <div class="nc-aud__card" data-reveal>
-          <span class="nc-aud__pct">30<sup>%</sup></span>
-          <span class="nc-aud__label">Enterprise Infrastructure Leaders</span>
-          <p class="nc-aud__desc">CIOs, VPs of Infrastructure, and cloud architects evaluating neocloud for AI workloads.</p>
-        </div>
-        <div class="nc-aud__card" data-reveal>
-          <span class="nc-aud__pct">20<sup>%</sup></span>
-          <span class="nc-aud__label">Neocloud Founders &amp; Executives</span>
-          <p class="nc-aud__desc">CEOs, CTOs, and VPs from the 10-12 companies defining the category.</p>
-        </div>
-        <div class="nc-aud__card" data-reveal>
-          <span class="nc-aud__pct">15<sup>%</sup></span>
-          <span class="nc-aud__label">Investors &amp; Analysts</span>
-          <p class="nc-aud__desc">VCs, private equity, and research analysts covering AI infrastructure.</p>
-        </div>
-        <div class="nc-aud__card" data-reveal>
-          <span class="nc-aud__pct">15<sup>%</sup></span>
-          <span class="nc-aud__label">Data Center &amp; Energy Executives</span>
-          <p class="nc-aud__desc">Operators, power, cooling, and colocation - the physical layer, via iMasons.</p>
-        </div>
-        <div class="nc-aud__card" data-reveal>
-          <span class="nc-aud__pct">15<sup>%</sup></span>
-          <span class="nc-aud__label">Infrastructure Ecosystem</span>
-          <p class="nc-aud__desc">Storage, networking, silicon, and software - the partners neoclouds need.</p>
-        </div>
-        <div class="nc-aud__card" data-reveal>
-          <span class="nc-aud__pct">5<sup>%</sup></span>
-          <span class="nc-aud__label">Developers &amp; Architects</span>
-          <p class="nc-aud__desc">Senior engineers building on neocloud platforms.</p>
-        </div>
-      </div>
-      <p class="nc-aud__foot mono" data-reveal>TARGET COMPOSITION · SENIORITY-SCREENED · 250 SEATS</p>
-    </section>
-
-    <!-- ══════════ 04 · THE COUNCIL ══════════ -->
-    <section class="section" id="council" aria-labelledby="councilTitle">
-      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 04 - The NeoCloud Council</p>
-      <h2 class="h-display" id="councilTitle" data-reveal>THE FOUNDERS SHAPING<br /><span class="h-grad">THE NEXT CLOUD</span><span class="dot-red">.</span></h2>
-      <p class="body-lg studio__lede" data-reveal>The inaugural NeoCloud Council - 10-12 neocloud founders and
-        executives defining a new era of cloud infrastructure. Featured speakers, panelists, and curated lunch
-        seats alongside the enterprise buyers they serve. The Council unveils on stage at the Summit.</p>
-      <div class="nc-roster" data-reveal>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">01</span><span class="nc-roster__name">Vultr</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">02</span><span class="nc-roster__name">CoreWeave</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">03</span><span class="nc-roster__name">Lambda</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">04</span><span class="nc-roster__name">Nebius</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">05</span><span class="nc-roster__name">Crusoe</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">06</span><span class="nc-roster__name">NScale</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">07</span><span class="nc-roster__name">RunPod</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">08</span><span class="nc-roster__name">Civo</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">09</span><span class="nc-roster__name">Gcore</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">10</span><span class="nc-roster__name">Together AI</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">11</span><span class="nc-roster__name">Genesis Cloud</span></div>
-        <div class="nc-roster__seat"><span class="nc-roster__num mono">12</span><span class="nc-roster__name">Voltage Park</span></div>
-      </div>
-      <p class="mono" style="font-size: 0.66rem; color: var(--grey-dim); margin-top: 1.2rem;" data-reveal>
-        INAUGURAL TARGET ROSTER · 12 SEATS · FINAL ROSTER CONFIRMED Q2 2026</p>
-    </section>
-
-    <!-- ══════════ 05 · THE PROGRAM ══════════ -->
+    <!-- ══════════ 04 · THE PROGRAM ══════════
+         Simplified from MASTER AGENDA 9/24/26: buffers, abstracts, and ALT/pending
+         names intentionally left out. Day-at-a-glance times per Bill's corrections. -->
     <section class="section" id="program" aria-labelledby="programTitle">
-      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 05 - The Program</p>
-      <h2 class="h-display" id="programTitle" data-reveal>ONE DAY.<br /><span class="h-grad">EVERY LAYER</span> OF THE STACK<span class="dot-red">.</span></h2>
-      <p class="body-lg studio__lede" data-reveal>One stage, one day, moving up the stack - from the neoclouds standing
-        up GPU capacity, to the technology partners powering them, to the enterprises deciding where to spend. All
-        day, concurrent with the main stage: the Branded Studio - professional interviews, captured by Ignite Studio.
-        Draft agenda, subject to change.</p>
-      <div class="timeline" style="max-width: 860px;">
-        <article class="timeline__item timeline__item--phase" data-reveal>
-          <p class="timeline__date mono">MORNING</p>
-          <h3 class="timeline__title">The NeoClouds</h3>
-          <p class="timeline__desc">The physical foundation of AI - data centers, energy, colocation - what inference
-            clouds want from a GPU partner, how new clouds turn raw capacity into product enterprises will actually
-            buy, and how investors are pricing the GPU ecosystem right now.</p>
+      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 04 - The Program</p>
+      <h2 class="h-display" id="programTitle" data-reveal>ONE STAGE. ONE DAY.<br /><span class="h-grad">THE FULL STACK</span><span class="dot-red">.</span></h2>
+      <p class="body-lg studio__lede" data-reveal>A single-track main stage built to move fast: headline keynotes,
+        moderated panels with operators and buyers, and technical deep dives. The expo lounge is open all day for
+        meetings and demos.</p>
+
+      <div class="nc-glance" data-reveal>
+        <div class="nc-glance__item"><span class="nc-glance__time">8:00 AM</span><span class="nc-glance__label mono">Coffee Networking</span></div>
+        <div class="nc-glance__item"><span class="nc-glance__time">9:00 AM</span><span class="nc-glance__label mono">Opening Remarks</span></div>
+        <div class="nc-glance__item"><span class="nc-glance__time">12:00 PM</span><span class="nc-glance__label mono">Expo Networking + Lunch</span></div>
+        <div class="nc-glance__item"><span class="nc-glance__time">4:00 PM</span><span class="nc-glance__label mono">Closing Session</span></div>
+        <div class="nc-glance__item"><span class="nc-glance__time">4:30 PM</span><span class="nc-glance__label mono">Expo Lounge Happy Hour · to 6:30</span></div>
+        <div class="nc-glance__item"><span class="nc-glance__time">6:00 PM</span><span class="nc-glance__label mono">Invite-Only VIP Dinner · to 8:30</span></div>
+      </div>
+
+      <div class="nc-agenda">
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">9:00 AM</p><span class="nc-agenda__type mono">Opening</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">Opening Remarks</h3>
+            <p class="nc-agenda__who"><b>Bill Barry</b>, IgniteGTM</p></div>
         </article>
-        <article class="timeline__item" data-reveal>
-          <p class="timeline__date mono">08:30</p>
-          <h3 class="timeline__title">Doors Open · Coffee &amp; Innovation Row</h3>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">9:10 AM</p><span class="nc-agenda__type mono">Panel</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">State of the Neocloud: The Builders Rewriting Cloud Economics</h3>
+            <p class="nc-agenda__who">Moderator <b>Carl Brown</b>, Supermicro · <b>Steven Hou</b>, Silicon Data · <b>Liran Zvibel</b>, WEKA · <b>Tiffany Wilson</b>, Remanie.ai</p></div>
         </article>
-        <article class="timeline__item" data-reveal>
-          <p class="timeline__date mono">09:30</p>
-          <h3 class="timeline__title">Opening Remarks</h3>
-          <p class="timeline__desc">Bill Barry + presenting sponsor · main stage.</p>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">9:45 AM</p><span class="nc-agenda__type nc-agenda__type--keynote mono">Keynote</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">The Neocloud Advantage in the Agentic Era</h3>
+            <p class="nc-agenda__who"><b>Nicola Tan</b>, AMD</p></div>
         </article>
-        <article class="timeline__item" data-reveal>
-          <p class="timeline__date mono">09:45</p>
-          <h3 class="timeline__title">Keynote · NeoCloud Council Featured Speaker</h3>
-          <p class="timeline__desc">30 min · neocloud CEO.</p>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">10:05 AM</p><span class="nc-agenda__type mono">Panel</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">Powering the Neocloud: Energy, Infrastructure, and the Networks Beneath the GPU</h3>
+            <p class="nc-agenda__who">Moderator <b>Dean Nelson</b>, iMasons · <b>Lamia Youseff</b>, Jazz Computing · <b>Bryan Lubin</b>, Moonshot Energy · <b>Forrest Heath</b>, Panadina</p></div>
         </article>
-        <article class="timeline__item" data-reveal>
-          <p class="timeline__date mono">10:15</p>
-          <h3 class="timeline__title">Founding Infrastructure Partner Keynote + Demo</h3>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">10:35 AM</p><span class="nc-agenda__type mono">Panel</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">Training vs. Inferencing: What Phase Are We At? What's Ahead?</h3>
+            <p class="nc-agenda__who">Moderator <b>Sebastian Spitzer</b>, IgniteGTM · <b>Alex Yeh</b>, GMI Cloud · <b>Craig Geringer</b>, Massed Compute</p></div>
         </article>
-        <article class="timeline__item" data-reveal>
-          <p class="timeline__date mono">11:00</p>
-          <h3 class="timeline__title">SemiAnalysis Intelligence Briefing</h3>
-          <p class="timeline__desc">"The State of Neocloud Economics" · 30 min.</p>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">11:05 AM</p><span class="nc-agenda__type nc-agenda__type--keynote mono">Keynote</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">The Real Cost of a Token: An Open Benchmark for AI Compute Economics</h3>
+            <p class="nc-agenda__who"><b>Muneeb Rasool</b>, Tensor Machines · <b>Dean Nelson</b>, Cato Digital</p></div>
         </article>
-        <article class="timeline__item timeline__item--now" data-reveal>
-          <p class="timeline__date mono">11:30</p>
-          <h3 class="timeline__title">The Main Event · State of the NeoCloud</h3>
-          <p class="timeline__desc">Panel · 4-5 Council members · 45 min.</p>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">11:20 AM</p><span class="nc-agenda__type mono">Panel</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">The Neocloud Security Gap: Tenant Isolation, Trust, and Skipping the Basics</h3>
+            <p class="nc-agenda__who">Moderator from <b>Cisco</b> · <b>Victor Kuarsingh</b>, ex-Capital One</p></div>
         </article>
-        <article class="timeline__item timeline__item--phase" data-reveal>
-          <p class="timeline__date mono">MIDDAY</p>
-          <h3 class="timeline__title">The Technology Partners</h3>
-          <p class="timeline__desc">Direct presentations from the companies building the hardware, storage, and
-            networking that neoclouds run on. Confirmed partners include Supermicro, AMD, and WEKA.</p>
+        <article class="nc-agenda__row nc-agenda__row--break" data-reveal>
+          <p class="nc-agenda__time mono">12:00 PM</p><span class="nc-agenda__type mono">Break</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">Expo Networking + Lunch</h3></div>
         </article>
-        <article class="timeline__item" data-reveal>
-          <p class="timeline__date mono">12:15</p>
-          <h3 class="timeline__title">Curated Networking Lunch · The Gallery</h3>
-          <p class="timeline__desc">Named seats · mixed personas · real conversations.</p>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">1:00 PM</p><span class="nc-agenda__type mono">Panel</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">The Inference Stack: From Silicon to Serving Models</h3>
+            <p class="nc-agenda__who">Moderator <b>Rob Naidoff</b>, SambaNova · <b>Syona Sarma</b>, DigitalOcean · <b>Simran Arora</b>, Together AI</p></div>
         </article>
-        <article class="timeline__item timeline__item--phase" data-reveal>
-          <p class="timeline__date mono">AFTERNOON</p>
-          <h3 class="timeline__title">The Enterprise</h3>
-          <p class="timeline__desc">The buyers, unfiltered. A dedicated Vultr keynote plus enterprise panels on what
-            leaders actually want from AI infrastructure and what it takes to earn their business.</p>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">1:25 PM</p><span class="nc-agenda__type nc-agenda__type--keynote mono">Keynote</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">Upscale AI Keynote</h3>
+            <p class="nc-agenda__who"><b>Aravindh Srikumar</b>, Upscale AI</p></div>
         </article>
-        <article class="timeline__item" data-reveal>
-          <p class="timeline__date mono">13:30</p>
-          <h3 class="timeline__title">Sector Deep-Dives</h3>
-          <p class="timeline__desc">Storage · Networking &amp; Interconnect · 2 x 30 min.</p>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">1:40 PM</p><span class="nc-agenda__type mono">Panel</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">When Does GPU Capacity Become an AI Cloud?</h3>
+            <p class="nc-agenda__who">Moderator <b>Rajeev Koodli</b>, SoftBank / Infrinia · <b>Erik Norden</b>, Zyphra · <b>Victor Ghadban</b>, Qumulus</p></div>
         </article>
-        <article class="timeline__item" data-reveal>
-          <p class="timeline__date mono">14:45</p>
-          <h3 class="timeline__title">iMasons Track · "The Foundation Layer"</h3>
-          <p class="timeline__desc">45 min · physical infrastructure.</p>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">2:10 PM</p><span class="nc-agenda__type mono">Panel</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">AMD + Cerebras: Decode &amp; Prefill, The Future of Inferencing</h3>
+            <p class="nc-agenda__who">Moderator <b>Drew Pletcher</b>, Lightning AI · <b>Andy Hock</b>, Cerebras · <b>Matt Oullette</b>, AMD</p></div>
         </article>
-        <article class="timeline__item" data-reveal>
-          <p class="timeline__date mono">15:30</p>
-          <h3 class="timeline__title">Closing Fireside · Investor + NeoCloud Founder</h3>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">2:30 PM</p><span class="nc-agenda__type nc-agenda__type--keynote mono">Keynote</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">Vultr Keynote</h3>
+            <p class="nc-agenda__who"><b>Kevin Cochrane</b>, Vultr</p></div>
         </article>
-        <article class="timeline__item" data-reveal>
-          <p class="timeline__date mono">16:00</p>
-          <h3 class="timeline__title">Gallery Happy Hour</h3>
-          <p class="timeline__desc">Through 17:00.</p>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">2:50 PM</p><span class="nc-agenda__type mono">Panel</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">Enterprise Tokenomics: Is the Agentic Wave Driving Token Consumption?</h3>
+            <p class="nc-agenda__who">Moderator <b>Vyoma Gajjar</b>, ServiceNow · <b>Arzoo Mittal</b>, TransUnion · <b>Val Bercovici</b>, WEKA</p></div>
         </article>
-        <article class="timeline__item timeline__item--phase" data-reveal>
-          <p class="timeline__date mono">EVENING</p>
-          <h3 class="timeline__title">Invite-Only VIP Dinner</h3>
-          <p class="timeline__desc">Very limited seating · named seats · mixed personas · real conversations.</p>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">3:10 PM</p><span class="nc-agenda__type mono">Panel</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">Inferencing + Bare Metal: What Inference Providers Look For in a GPU Partner</h3>
+            <p class="nc-agenda__who">Moderator <b>Carmen Li</b>, Compute Exchange · <b>Simone Giacomelli</b>, Prem AI</p></div>
+        </article>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">3:35 PM</p><span class="nc-agenda__type mono">Panel</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">Private Capital Finance: When Does Compute Become Bankable?</h3>
+            <p class="nc-agenda__who">Moderator <b>Vladimirs Sazonovs</b>, Cisco · <b>Rahul Varshneya</b>, Morgan Stanley · <b>Matt Renner</b>, Acasia</p></div>
+        </article>
+        <article class="nc-agenda__row" data-reveal>
+          <p class="nc-agenda__time mono">4:00 PM</p><span class="nc-agenda__type mono">Closing</span>
+          <div class="nc-agenda__body"><h3 class="nc-agenda__title">Closing Session</h3></div>
         </article>
       </div>
+      <p class="nc-foot mono" data-reveal>Draft agenda · subject to change</p>
     </section>
 
-    <!-- ══════════ 06 · PARTNERS ══════════ -->
+    <!-- ══════════ 05 · PARTNERS ══════════
+         All logos render pure white on black (Bill-approved treatment).
+         SWAP: rebuild with Bill's new logo set when it lands. -->
     <section class="section" id="partners" aria-labelledby="partnersTitle">
-      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 06 - Strategic Partners</p>
-      <h2 class="h-display" id="partnersTitle" data-reveal>THE DATA AND<br /><span class="h-grad">THE NETWORK</span><span class="dot-red">.</span></h2>
-      <div class="nc-partner-grid">
-        <article class="nc-partner" data-reveal>
-          <p class="nc-partner__kicker mono">RESEARCH PARTNER · SEMIANALYSIS</p>
-          <h3>The data that <span class="h-grad">moves the market</span>.</h3>
-          <p>The leading independent research firm on AI-infrastructure economics. Their Tokenomics Model connects
-            hardware inputs to software outputs across the AI stack.</p>
-          <p class="nc-partner__at mono">AT THE SUMMIT · EXCLUSIVE INTELLIGENCE BRIEFING - THE STATE OF NEOCLOUD ECONOMICS</p>
-        </article>
-        <article class="nc-partner" data-reveal>
-          <p class="nc-partner__kicker mono">COMMUNITY PARTNER · IMASONS</p>
-          <h3>The community <span class="h-grad">behind the metal</span>.</h3>
-          <p>Infrastructure Masons - the global community whose members build and operate the world's largest data
-            centers, power systems, and network fabrics.</p>
-          <p class="nc-partner__at mono">AT THE SUMMIT · THE FOUNDATION LAYER - DEDICATED PROGRAMMING TRACK</p>
-        </article>
-        <article class="nc-partner" data-reveal>
-          <p class="nc-partner__kicker mono">TECHNOLOGY PARTNERS · CONFIRMED</p>
-          <h3>The hardware that <span class="h-grad">powers the cloud</span>.</h3>
-          <p>The companies building the hardware, storage, and networking that neoclouds run on - presenting
-            direct to the room. Confirmed partners: Supermicro, AMD, and WEKA.</p>
-          <p class="nc-partner__at mono">AT THE SUMMIT · THE TECHNOLOGY PARTNERS - MIDDAY DIRECT PRESENTATIONS</p>
-        </article>
+      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 05 - Partners</p>
+      <h2 class="h-display" id="partnersTitle" data-reveal>BACKED BY THE<br /><span class="h-grad">COMPANIES BUILDING IT</span><span class="dot-red">.</span></h2>
+      <p class="body-lg studio__lede" data-reveal>The systems, silicon, and storage partners powering the neocloud,
+        presenting direct to the room.</p>
+      <ul class="nc-sponsors" role="list" data-reveal>
+        <li><img src="assets/logos/supermicro.png" alt="Supermicro" style="--lh: 58px" width="113" height="58" loading="lazy" /></li>
+        <li><img src="assets/logos/amd.png" alt="AMD" style="--lh: 38px" width="157" height="38" loading="lazy" /></li>
+        <li><img src="https://wcllsdwlmebrapgiufzi.supabase.co/storage/v1/object/public/WS-assets/weka-primary-reversed-digital.svg" alt="WEKA" style="--lh: 42px" width="136" height="42" loading="lazy" /></li>
+      </ul>
+      <p class="nc-editorial" data-reveal>Produced alongside the <b>iMasons</b> community, with media partners
+        <b>AIPressRoom</b> and <b>Times of AI</b>.</p>
+      <div class="hero__ctas" data-reveal style="margin-top: 2rem;">
+        <a href="https://ignite.docsend.com/view/fwku8d42vn6q75yf" target="_blank" rel="noopener" class="btn btn--ghost" data-magnetic><span>Sponsor Prospectus</span></a>
       </div>
-      <p class="mono" style="font-size: 0.66rem; color: var(--grey-dim); margin-top: 1.6rem;" data-reveal>
-        CONFIRMED TECHNOLOGY PARTNERS · SUPERMICRO · AMD · WEKA</p>
     </section>
 
-    <!-- ══════════ 07 · BUILT ON AIS PROOF ══════════ -->
+    <!-- ══════════ 06 · PRODUCED BY IGNITEGTM ══════════
+         TODO: drop in the Ignite "what makes Ignite different" commercial here once we have the video URL. -->
     <section class="section-media section-media--veil section" id="proof" aria-labelledby="proofTitle">
       <div class="section-media__bg" aria-hidden="true">
         <img src="assets/events/crowd.jpg" alt="" loading="lazy" />
       </div>
       <div class="sec-head" data-reveal>
         <h2 id="proofTitle">Built on the proof of <span class="h-grad">AI Infra Summit</span><span class="dot-red">.</span></h2>
-        <span class="mono">// 07 - The Foundation</span>
+        <span class="mono">// 06 - The Producer</span>
       </div>
-      <p class="body-lg" data-reveal>NeoCloud Summit is produced by IgniteGTM - the team behind AIS5, which brought
-        1,000+ infrastructure leaders to San Jose. Same engine. Tighter room.</p>
+      <p class="body-lg" data-reveal>Neocloud Summit is produced by IgniteGTM, the team behind AI Infra Summit, which
+        brought 1,000+ infrastructure leaders to San Jose. Same engine. Tighter room.</p>
       <div class="proof__stats proof__stats--three" style="margin-top: 2.5rem;">
         <div class="stat" data-reveal>
-          <span class="stat__num"><span data-count="1000">0</span>+</span>
+          <span class="stat__num">1,000+</span>
           <span class="stat__label mono">Executives at AIS5</span>
         </div>
         <div class="stat" data-reveal>
-          <span class="stat__num"><span data-count="5">0</span></span>
+          <span class="stat__num">5</span>
           <span class="stat__label mono">Sold-out summits produced</span>
         </div>
         <div class="stat" data-reveal>
-          <span class="stat__num"><span data-count="50">0</span>+</span>
+          <span class="stat__num">50+</span>
           <span class="stat__label mono">Partners across the portfolio</span>
         </div>
       </div>
       <div class="hero__ctas" data-reveal style="margin-top: 2rem;">
-        <a href="https://www.ignitegtm.com/events.html" class="btn btn--ghost" data-magnetic><span>Explore Our Events</span></a>
+        <a href="https://www.ignitegtm.com/events.html" class="btn btn--ghost" data-magnetic><span>Explore IgniteGTM Events</span></a>
       </div>
     </section>
 
-    <!-- ══════════ 08 · VENUE ══════════ -->
+    <!-- ══════════ 07 · VENUE + DETAILS ══════════ -->
     <section class="section" id="venue" aria-labelledby="venueTitle">
-      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 08 - The Room</p>
+      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 07 - The Venue</p>
       <h2 class="h-display" id="venueTitle" data-reveal>HOTEL KABUKI<span class="dot-red">.</span><br /><span class="h-grad">SAN FRANCISCO</span><span class="dot-red">.</span></h2>
-      <p class="body-lg studio__lede" data-reveal>An iconic Japantown landmark in the heart of San Francisco -
-        hosting the inaugural NeoCloud Summit during SF Tech Week 2026. Main stage, gallery networking,
-        Innovation Row, and the all-day Branded Studio, all under one roof.</p>
+      <p class="body-lg studio__lede" data-reveal>A Japantown landmark in the heart of San Francisco, during SF Tech
+        Week 2026. Main stage, expo lounge, and Ignite Studio under one roof.</p>
       <dl class="facts" data-reveal style="max-width: 640px;">
+        <div class="facts__row"><dt class="mono">Date</dt><dd>October 8, 2026</dd></div>
         <div class="facts__row"><dt class="mono">Address</dt><dd>1625 Post St, San Francisco, CA</dd></div>
-        <div class="facts__row"><dt class="mono">Date</dt><dd>October 8, 2026 · Doors 08:30 PT</dd></div>
-        <div class="facts__row"><dt class="mono">Context</dt><dd>SF Tech Week 2026 · Invite-only</dd></div>
+        <div class="facts__row"><dt class="mono">Main Stage</dt><dd>9:00 AM - 4:00 PM</dd></div>
+        <div class="facts__row"><dt class="mono">Happy Hour</dt><dd>4:30 - 6:30 PM · Expo Lounge</dd></div>
+        <div class="facts__row"><dt class="mono">Register</dt><dd><a href="https://luma.com/neocloud_summit_oct8" target="_blank" rel="noopener" style="color: var(--nc-blue);">luma.com/neocloud_summit_oct8</a></dd></div>
       </dl>
-    </section>
-
-    <!-- ══════════ MEDIA PARTNERS ══════════ -->
-    <!-- Repeatable logo strip. To add a media partner: prep a transparent PNG optically
-         matched to ~36px height, save to assets/logos/<partner-name>-logo.png, then copy
-         one <li> below. Set alt to the partner name, href to their site, and tune --lh so
-         the logo reads at the same optical size as the others. Add logo-wall__img--invert
-         only for logos that need white-on-dark inversion. -->
-    <section class="section" id="media-partners" aria-labelledby="mediaPartnersTitle">
-      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> Media Partners</p>
-      <h2 class="h-display" id="mediaPartnersTitle" data-reveal>AMPLIFYING THE<br /><span class="h-grad">NEOCLOUD CONVERSATION</span><span class="dot-red">.</span></h2>
-      <ul class="logo-wall" role="list" data-reveal>
-        <li class="logo-wall__item"><a href="https://aipressroom.com/events-calendar/" target="_blank" rel="noopener"><img src="assets/logos/aipressroom-logo.png" alt="AIPressRoom" class="logo-wall__img logo-wall__img--invert" style="--lh: 36px" width="341" height="72" loading="lazy" /></a></li>
-        <li class="logo-wall__item"><a href="https://www.timesofai.com/" target="_blank" rel="noopener"><img src="assets/logos/timesofai-logo.png" alt="Times Of AI" class="logo-wall__img logo-wall__img--invert" style="--lh: 26px" width="180" height="29" loading="lazy" /></a></li>
-      </ul>
     </section>
 
     <!-- ══════════ CTA BAND ══════════ -->
@@ -573,12 +614,10 @@
         <img src="assets/events/ignite-room.jpg" alt="" loading="lazy" />
       </div>
       <h2 class="cta-band__title" data-reveal>SEATS ARE LIMITED.<br /><span class="h-grad">RESERVE YOURS NOW</span><span class="dot-red">.</span></h2>
-      <p class="cta-band__sub" data-reveal>If you build, power, buy, or fund AI infrastructure, this is your room. A curated
-        networking lunch, a Gallery happy hour, and an invite-only VIP dinner with very limited seating - named
-        seats, mixed personas, real conversations.</p>
+      <p class="cta-band__sub" data-reveal>If you build, power, buy, or fund AI infrastructure, this is your room.</p>
       <div class="cta-band__actions" data-reveal>
         <a href="https://luma.com/neocloud_summit_oct8" target="_blank" rel="noopener" class="btn btn--solid btn--lg" data-magnetic><span>Reserve Your Seat</span></a>
-        <a href="https://contact.ignitegtm.com/events?interest=Sponsoring" class="btn btn--ghost btn--lg" data-magnetic><span>Sponsor the Summit</span></a>
+        <a href="https://ignite.docsend.com/view/fwku8d42vn6q75yf" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" data-magnetic><span>Sponsor Prospectus</span></a>
         <a href="https://calendly.com/ignitegtm/meeting-30m-with-bill-barry" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" data-magnetic><span>Book a Call with Bill</span></a>
       </div>
     </section>
@@ -593,17 +632,18 @@
       </div>
       <div class="footer__cols">
         <div class="footer__col">
-          <p class="mono footer__col-label">EXPLORE</p>
+          <p class="mono footer__col-label">THE SUMMIT</p>
+          <a href="#speakers">Speakers</a>
+          <a href="#program">Program</a>
+          <a href="#partners">Partners</a>
+          <a href="#venue">Venue</a>
+        </div>
+        <div class="footer__col">
+          <p class="mono footer__col-label">IGNITEGTM</p>
           <a href="https://www.ignitegtm.com/events.html">Events</a>
           <a href="https://www.ignitegtm.com/studio.html">Ignite Studio</a>
           <a href="https://www.ignitegtm.com/advisory.html">GTM Advisory</a>
           <a href="https://www.ignitegtm.com/team.html">Team</a>
-        </div>
-        <div class="footer__col">
-          <p class="mono footer__col-label">CONNECT</p>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a>
-          <a href="https://x.com" target="_blank" rel="noopener">X</a>
         </div>
         <div class="footer__col">
           <p class="mono footer__col-label">REACH US</p>
@@ -614,7 +654,7 @@
     </div>
     <div class="footer__legal section mono">
       <span>© 2026 IgniteGTM. All rights reserved.</span>
-      <span>NeoCloud Summit · Oct 8, 2026 · San Francisco</span>
+      <span>Neocloud Summit · Oct 8, 2026 · San Francisco</span>
     </div>
   </footer>
 

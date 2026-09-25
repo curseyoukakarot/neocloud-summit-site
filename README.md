@@ -20,6 +20,14 @@ python3 -m http.server 4173
 | `css/style.css` | IgniteGTM design system (shared with the main site) |
 | `css/pages.css` | Sub-page components (page hero, detail rows, timeline, media sections) |
 | `js/page.js` | Page behaviors — reveals, counters, nav, cursor (needs GSAP + ScrollTrigger from CDN) |
-| `assets/` | Logo, favicons, and event photography |
+| `assets/` | Logo, favicons, event photography, and partner logos (`assets/logos/`, rendered pure white on black) |
 
 Nav/footer links to other IgniteGTM pages point at the live site, `https://www.ignitegtm.com/`.
+
+## Content sources
+
+Page copy follows Bill's *Program Overview (v4)*. Sessions and speakers come from the
+MASTER AGENDA (updated 9/24/26). Only name, title, and company are published. The
+source docs are confidential and stay out of this repo.
+
+Style rule: "neocloud" always takes a lowercase c, including the event name.

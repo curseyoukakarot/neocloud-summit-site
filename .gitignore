@@ -1,0 +1,7 @@
+# OS cruft
+.DS_Store
+
+# Video masters & web deliverables stay out of git (GitHub rejects files >100MB)
+*.mov
+*.m4v
+*.mp4

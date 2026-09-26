@@ -26,7 +26,7 @@ S = [
  ('aravind-srikumar','Aravind Srikumar','VP of Marketing','Upscale AI','aravind-srikumar-a6227019','Keynote'),
  ('muneeb-rasool','Muneeb Rasool','Founder &amp; CEO','Tensor Machines','muneebrasool','Keynote'),
  ('victor-kuarsingh','Victor Kuarsingh','Formerly Capital One','ex-Capital One','victorkuarsingh',None),
- ('arzoo-mittal','Arzoo Mittal','Technical Program Manager','TransUnion','arzoomittal',None),
+ ('arzoo-mittal','Arzoo Mittal','Technical Program Manager','TransUnion','mittal-arzoo',None),
  ('drew-pletcher','Drew Pletcher','Principal Architect','Lightning AI','drew-pletcher-a14907',None),
  ('erik-norden','Erik Norden','Executive, AGI Technology &amp; Strategy','Zyphra','eriknorden',None),
  ('alex-yeh','Alex Yeh','CEO','GMI Cloud','gmi-yeh',None),
@@ -38,8 +38,8 @@ S = [
  ('bryan-lubin','Bryan Lubin','Managing Director','Moonshot Energy','bryan-a-lubin-8956b119',None),
  ('forrest-heath','Forrest Heath','Co-founder','Panadina','forrestheath3',None),
  ('tiffany-wilson','Tiffany Wilson','CEO','Remanie.ai','tiffanyjwilson',None),
- ('victor-ghadban','Victor Ghadban','Principal Architect','Qumulus',None,None),   # two same-name AI profiles; unverified
- ('matt-renner','Matt Renner','Chief Commercial Officer','Acasia',None,None),     # no confirmed profile yet
+ ('victor-ghadban','Victor Ghadban','Principal Architect','Qumulus','victorghadban',None),
+ ('matt-renner','Matt Renner','Chief Commercial Officer','Acasia','matthewdrenner',None),
  ('sebastian-spitzer','Sebastian Spitzer','Advisor','IgniteGTM','seba-s',None),
  ('bill-barry','Bill Barry','CEO','IgniteGTM','billnbarry','Host'),
 ]

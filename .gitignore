@@ -1,7 +1,9 @@
 # OS cruft
 .DS_Store
 
-# Video masters & web deliverables stay out of git (GitHub rejects files >100MB)
+# Video masters stay out of git (GitHub rejects files >100MB).
+# Only the compressed web encodes in assets/video/ are committed.
 *.mov
 *.m4v
 *.mp4
+!assets/video/*.mp4

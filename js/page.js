@@ -107,6 +107,7 @@ gsap.utils.toArray("[data-count]").forEach((el) => {
 /* ─────────────── in-view autoplay for muted videos ─────────────── */
 
 document.querySelectorAll("video[data-inview-play]").forEach((v) => {
+  if (prefersReducedMotion) return; // poster only
   new IntersectionObserver(([e]) => {
     if (e.isIntersecting) v.play().catch(() => {});
     else v.pause();

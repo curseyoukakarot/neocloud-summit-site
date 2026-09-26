@@ -98,7 +98,7 @@
     }
 
     .nc-hero-badge {
-      display: inline-block; margin-bottom: 1.4rem;
+      display: inline-block; margin-bottom: 1.4rem; align-self: flex-start;
       border: 1px solid var(--nc-blue); color: var(--nc-blue);
       font-size: 0.7rem; padding: 0.5em 1em; border-radius: 2px;
     }
@@ -257,9 +257,14 @@
 
     <!-- ══════════ HERO ══════════ -->
     <section class="page-hero page-hero--media" id="top" aria-labelledby="ncTitle">
+      <!-- Hero loop: web encodes of kabukineocloudsummitFINAL.mp4 (4K master stays off git).
+           Muted + playsinline so it can autoplay; page.js plays it while in view. -->
       <div class="page-hero__media" aria-hidden="true">
-        <img src="assets/events/neocloud-hero.jpg" style="object-position: 55% 35%"
-          alt="" fetchpriority="high" />
+        <video muted playsinline loop preload="metadata" data-inview-play
+          poster="assets/video/neocloud-hero-poster.jpg">
+          <source src="assets/video/neocloud-hero-720.mp4" type="video/mp4" media="(max-width: 768px)" />
+          <source src="assets/video/neocloud-hero-1080.mp4" type="video/mp4" />
+        </video>
       </div>
       <p class="page-hero__crumb mono">
         <a href="https://www.ignitegtm.com/">IGNITEGTM</a> <span class="sep">//</span>

@@ -214,6 +214,18 @@
     .nc-sponsors img { height: var(--h); width: auto; max-width: 100%; object-fit: contain; }
     /* Infrinia publishes no logo file; their site sets the name in Mukta Mahee Bold */
     .nc-sponsors__word { font-family: "Mukta Mahee", Arial, sans-serif !important; font-weight: 700; font-size: 29px; line-height: 1; color: #fff; letter-spacing: -0.01em; }
+    /* ── 07 · Venue: photo on the right, fading in from the left ── */
+    .nc-venue { position: relative; overflow: hidden; }
+    .nc-venue > :not(.nc-venue__media) { position: relative; z-index: 1; max-width: min(44%, 620px); }
+    .nc-venue .h-display { font-size: clamp(2.4rem, 4.6vw, 4.4rem); }
+    .nc-venue__media { position: absolute; top: 0; right: 0; bottom: 0; width: 56%; z-index: 0; pointer-events: none; }
+    .nc-venue__media img { width: 100%; height: 100%; object-fit: cover; object-position: 85% 50%; }
+    .nc-venue__media::after {
+      content: ""; position: absolute; inset: 0;
+      background:
+        linear-gradient(to right, var(--black) 0%, rgba(5, 5, 6, 0.9) 14%, rgba(5, 5, 6, 0.5) 34%, rgba(5, 5, 6, 0.12) 58%, rgba(5, 5, 6, 0) 78%),
+        linear-gradient(to bottom, var(--black) 0%, rgba(5, 5, 6, 0) 16%, rgba(5, 5, 6, 0) 84%, var(--black) 100%);
+    }
     .nc-editorial { margin-top: 1.8rem; color: var(--grey); font-weight: 350; max-width: 44em; }
     .nc-editorial b { color: var(--white); font-weight: 600; }
 
@@ -228,6 +240,16 @@
       .nc-glance { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .nc-glance__item:nth-child(4) { border-left: 0; }
       .nc-glance__item:nth-child(n+4) { border-top: 1px solid var(--line); }
+    }
+    @media (max-width: 900px) {
+      .nc-venue > :not(.nc-venue__media) { max-width: none; }
+      .nc-venue__media {
+        position: relative; width: auto; height: auto; aspect-ratio: 4 / 3;
+        margin: 2.4rem calc(var(--pad) * -1) calc(clamp(5rem, 10vw, 9rem) * -1);
+      }
+      .nc-venue__media::after {
+        background: linear-gradient(to bottom, var(--black) 0%, rgba(5, 5, 6, 0.35) 28%, rgba(5, 5, 6, 0) 55%, rgba(5, 5, 6, 0) 85%, var(--black) 100%);
+      }
     }
     @media (max-width: 640px) {
       .nc-forces { grid-template-columns: 1fr; }
@@ -665,18 +687,22 @@
     </section>
 
     <!-- ══════════ 07 · VENUE + DETAILS ══════════ -->
-    <section class="section" id="venue" aria-labelledby="venueTitle">
+    <section class="section nc-venue" id="venue" aria-labelledby="venueTitle">
       <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> 07 - The Venue</p>
       <h2 class="h-display" id="venueTitle" data-reveal>HOTEL KABUKI<span class="dot-red">.</span><br /><span class="h-grad">SAN FRANCISCO</span><span class="dot-red">.</span></h2>
       <p class="body-lg studio__lede" data-reveal>A Japantown landmark in the heart of San Francisco, during SF Tech
         Week 2026. Main stage, expo lounge, and Ignite Studio under one roof.</p>
-      <dl class="facts" data-reveal style="max-width: 640px;">
+      <dl class="facts" data-reveal>
         <div class="facts__row"><dt class="mono">Date</dt><dd>October 8, 2026</dd></div>
         <div class="facts__row"><dt class="mono">Address</dt><dd>1625 Post St, San Francisco, CA</dd></div>
         <div class="facts__row"><dt class="mono">Main Stage</dt><dd>9:00 AM - 4:00 PM</dd></div>
         <div class="facts__row"><dt class="mono">Happy Hour</dt><dd>4:30 - 6:30 PM · Expo Lounge</dd></div>
         <div class="facts__row"><dt class="mono">Register</dt><dd><a href="https://luma.com/neocloud_summit_oct8" target="_blank" rel="noopener" style="color: var(--nc-blue);">luma.com/neocloud_summit_oct8</a></dd></div>
       </dl>
+      <!-- Venue photo: bleeds off the right edge and fades in from the left (overlay gradients in ::after) -->
+      <div class="nc-venue__media" aria-hidden="true">
+        <img src="assets/events/kabuki-lobby.jpg" alt="" width="1448" height="1086" loading="lazy" />
+      </div>
     </section>
 
     <!-- ══════════ CTA BAND ══════════ -->

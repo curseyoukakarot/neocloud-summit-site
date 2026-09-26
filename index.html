@@ -137,10 +137,10 @@
     .nc-cos__label { font-size: 0.62rem; color: var(--grey-dim); margin-bottom: 1.2rem; }
     .nc-cos__logos {
       list-style: none;
-      display: grid; grid-template-columns: repeat(6, minmax(0, 1fr));
+      display: flex; flex-wrap: wrap; justify-content: center;
       column-gap: 1.5rem;
     }
-    .nc-cos__logos li { height: 76px; display: flex; align-items: center; justify-content: center; }
+    .nc-cos__logos li { flex: 0 0 calc((100% - 6 * 1.5rem) / 7); height: 76px; display: flex; align-items: center; justify-content: center; }
     .nc-cos__logos img { height: var(--h); width: auto; max-width: 100%; object-fit: contain; }
     .nc-speakers {
       display: grid; gap: 10px;
@@ -237,7 +237,7 @@
 
     @media (max-width: 1024px) {
       .nc-forces { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .nc-cos__logos { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .nc-cos__logos li { flex-basis: calc((100% - 3 * 1.5rem) / 4); }
       .nc-cos__logos img { height: calc(var(--h) * 0.85); }
       .nc-sponsors__tier li { flex-basis: calc((100% - 3 * 1.5rem) / 4); }
       .nc-sponsors__tier--t1 li { height: 112px; }
@@ -261,8 +261,8 @@
     }
     @media (max-width: 640px) {
       .nc-forces { grid-template-columns: 1fr; }
-      .nc-cos__logos { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1rem; }
-      .nc-cos__logos li { height: 60px; }
+      .nc-cos__logos { column-gap: 1rem; }
+      .nc-cos__logos li { flex-basis: calc((100% - 1rem) / 2); height: 60px; }
       .nc-cos__logos img { height: calc(var(--h) * 0.72); }
       .nc-sponsors__tier { column-gap: 1rem; }
       .nc-sponsors__tier li { flex-basis: calc((100% - 1rem) / 2); height: 64px; }
@@ -426,6 +426,7 @@
           <li><img src="assets/logos/speakers/servicenow.svg" alt="ServiceNow" style="--h: 22.5px" width="154" height="22" loading="lazy" /></li>
           <li><img src="assets/logos/speakers/sambanova.png" alt="SambaNova" style="--h: 33px" width="151" height="33" loading="lazy" /></li>
           <li><img src="assets/logos/sponsors/upscale-ai.svg" alt="Upscale AI" style="--h: 29px" width="134" height="29" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/imasons.png" alt="iMasons (Infrastructure Masons)" style="--h: 34px" width="165" height="34" loading="lazy" /></li>
         </ul>
       </div>
 

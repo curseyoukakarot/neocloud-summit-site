@@ -23,7 +23,7 @@ S = [
  ('rob-naidoff','Rob Naidoff','VP Americas, GTM','SambaNova','rob-n-6aa43023',None),
  ('simran-arora','Simran Arora','Principal Research Scientist','Together AI','simran-arora',None),
  ('dean-nelson','Dean Nelson','Chairman, iMasons · CEO, Cato Digital','iMasons','deannelson','Keynote'),
- ('aravind-srikumar','Aravind Srikumar','VP of Marketing','Upscale AI','aravind-srikumar-a6227019','Keynote'),
+ ('aravind-srikumar','Aravind Srikumar','SVP of Product &amp; Marketing','Upscale AI','aravind-srikumar-a6227019','Keynote'),
  ('muneeb-rasool','Muneeb Rasool','Founder &amp; CEO','Tensor Machines','muneebrasool','Keynote'),
  ('victor-kuarsingh','Victor Kuarsingh','Formerly Capital One','ex-Capital One','victorkuarsingh',None),
  ('arzoo-mittal','Arzoo Mittal','Technical Program Manager','TransUnion','mittal-arzoo',None),

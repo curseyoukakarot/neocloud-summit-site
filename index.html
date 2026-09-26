@@ -121,16 +121,17 @@
 
     /* ── 02 · Speakers ── */
     .nc-cos {
-      display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1.1rem;
-      padding: 1.6rem 0; margin-bottom: 2.4rem;
+      padding: 1.8rem 0 2rem; margin-bottom: 2.4rem;
       border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
     }
-    .nc-cos__label { font-size: 0.62rem; color: var(--grey-dim); margin-right: 0.4rem; }
-    .nc-cos__item {
-      font-weight: 900; font-style: italic; text-transform: uppercase;
-      font-size: clamp(1.05rem, 1.9vw, 1.55rem); letter-spacing: 0.01em; line-height: 1.2;
+    .nc-cos__label { font-size: 0.62rem; color: var(--grey-dim); margin-bottom: 1.2rem; }
+    .nc-cos__logos {
+      list-style: none;
+      display: grid; grid-template-columns: repeat(6, minmax(0, 1fr));
+      column-gap: 1.5rem;
     }
-    .nc-cos__item:not(:last-child)::after { content: "/"; color: var(--nc-blue); margin-left: 1.1rem; font-style: normal; font-weight: 400; }
+    .nc-cos__logos li { height: 76px; display: flex; align-items: center; justify-content: center; }
+    .nc-cos__logos img { height: var(--h); width: auto; max-width: 100%; object-fit: contain; }
     .nc-speakers {
       display: grid; gap: 10px;
       grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
@@ -190,12 +191,17 @@
 
     @media (max-width: 1024px) {
       .nc-forces { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .nc-cos__logos { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .nc-cos__logos img { height: calc(var(--h) * 0.85); }
       .nc-glance { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .nc-glance__item:nth-child(4) { border-left: 0; }
       .nc-glance__item:nth-child(n+4) { border-top: 1px solid var(--line); }
     }
     @media (max-width: 640px) {
       .nc-forces { grid-template-columns: 1fr; }
+      .nc-cos__logos { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1rem; }
+      .nc-cos__logos li { height: 60px; }
+      .nc-cos__logos img { height: calc(var(--h) * 0.72); }
       .nc-glance { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .nc-glance__item:nth-child(4) { border-left: 1px solid var(--line); }
       .nc-glance__item:nth-child(odd) { border-left: 0; }
@@ -331,21 +337,25 @@
       <h2 class="h-display" id="speakersTitle" data-reveal>THE PEOPLE BUILDING<br /><span class="h-grad">THE NEXT CLOUD</span><span class="dot-red">.</span></h2>
       <p class="body-lg studio__lede" data-reveal>Operators, builders, and executives from across the stack. One stage.</p>
 
+      <!-- Logos are pure white, trimmed to their ink bounds (built from /logos).
+           --h is each logo's optically balanced height: wide wordmarks sit shorter,
+           compact marks taller, so every logo reads the same size. -->
       <div class="nc-cos" data-reveal>
-        <span class="nc-cos__label mono">Speakers from</span>
-        <span class="nc-cos__item">AMD</span>
-        <span class="nc-cos__item">Cerebras</span>
-        <span class="nc-cos__item">Supermicro</span>
-        <span class="nc-cos__item">WEKA</span>
-        <span class="nc-cos__item">SoftBank</span>
-        <span class="nc-cos__item">Morgan Stanley</span>
-        <span class="nc-cos__item">Cisco</span>
-        <span class="nc-cos__item">Vultr</span>
-        <span class="nc-cos__item">DigitalOcean</span>
-        <span class="nc-cos__item">ServiceNow</span>
-        <span class="nc-cos__item">SambaNova</span>
-        <span class="nc-cos__item">Together AI</span>
-        <span class="nc-cos__item">iMasons</span>
+        <p class="nc-cos__label mono">Speakers from</p>
+        <ul class="nc-cos__logos" role="list">
+          <li><img src="assets/logos/speakers/amd.png" alt="AMD" style="--h: 27px" width="113" height="27" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/cerebras.png" alt="Cerebras" style="--h: 46px" width="106" height="46" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/supermicro.png" alt="Supermicro" style="--h: 50px" width="98" height="50" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/weka.svg" alt="WEKA" style="--h: 29px" width="140" height="29" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/softbank.svg" alt="SoftBank" style="--h: 24px" width="163" height="24" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/morgan-stanley.svg" alt="Morgan Stanley" style="--h: 25px" width="173" height="25" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/cisco.png" alt="Cisco" style="--h: 49px" width="93" height="49" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/vultr.svg" alt="Vultr" style="--h: 31px" width="130" height="31" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/digitalocean.svg" alt="DigitalOcean" style="--h: 27px" width="160" height="27" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/servicenow.svg" alt="ServiceNow" style="--h: 22.5px" width="154" height="22" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/sambanova.png" alt="SambaNova" style="--h: 33px" width="151" height="33" loading="lazy" /></li>
+          <li><img src="assets/logos/speakers/together-ai.svg" alt="Together AI" style="--h: 41px" width="44" height="41" loading="lazy" /></li>
+        </ul>
       </div>
 
       <div class="nc-speakers" data-reveal>

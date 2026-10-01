@@ -241,6 +241,14 @@
         linear-gradient(to right, var(--black) 0%, rgba(5, 5, 6, 0.9) 14%, rgba(5, 5, 6, 0.5) 34%, rgba(5, 5, 6, 0.12) 58%, rgba(5, 5, 6, 0) 78%),
         linear-gradient(to bottom, var(--black) 0%, rgba(5, 5, 6, 0) 16%, rgba(5, 5, 6, 0) 84%, var(--black) 100%);
     }
+    /* ── Media & Analysts logos ── */
+    .nc-media {
+      list-style: none; display: flex; flex-wrap: wrap; justify-content: center; column-gap: 1.5rem;
+      padding-top: 2.2rem; border-top: 1px solid var(--line);
+    }
+    .nc-media li { flex: 0 0 calc((100% - 3 * 1.5rem) / 4); height: 84px; display: flex; align-items: center; justify-content: center; }
+    .nc-media a { display: flex; align-items: center; }
+    .nc-media img { height: var(--h); width: auto; max-width: 100%; object-fit: contain; }
     .nc-editorial { margin-top: 1.8rem; color: var(--grey); font-weight: 350; max-width: 44em; }
     .nc-editorial b { color: var(--white); font-weight: 600; }
 
@@ -273,6 +281,9 @@
       .nc-cos__logos { column-gap: 1rem; }
       .nc-cos__logos li { flex-basis: calc((100% - 1rem) / 2); height: 60px; }
       .nc-cos__logos img { height: calc(var(--h) * 0.72); }
+      .nc-media { column-gap: 1rem; }
+      .nc-media li { flex-basis: calc((100% - 1rem) / 2); height: 64px; }
+      .nc-media img { height: calc(var(--h) * 0.72); }
       .nc-sponsors__tier { column-gap: 1rem; }
       .nc-sponsors__tier li { flex-basis: calc((100% - 1rem) / 2); height: 64px; }
       .nc-sponsors__tier--t1 li { flex-basis: 100%; height: 88px; }
@@ -672,15 +683,21 @@
       </div>
     </section>
 
-    <!-- ══════════ MEDIA PARTNERS ══════════
-         Same strip as the ignitegtm.com Neocloud page. To add a partner: transparent PNG in
-         assets/logos/, copy an <li>, tune --lh so it reads at the same optical size. -->
+    <!-- ══════════ MEDIA & ANALYSTS ══════════
+         White, trimmed logos (sources in logos/media/); --h = optically balanced height.
+         Two rows of four on desktop, two per row on phones. -->
     <section class="section" id="media-partners" aria-labelledby="mediaPartnersTitle">
-      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> Media Partners</p>
+      <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> Media &amp; Analysts</p>
       <h2 class="h-display" id="mediaPartnersTitle" data-reveal>AMPLIFYING THE<br /><span class="h-grad">NEOCLOUD CONVERSATION</span><span class="dot-red">.</span></h2>
-      <ul class="logo-wall" role="list" data-reveal>
-        <li class="logo-wall__item"><a href="https://aipressroom.com/events-calendar/" target="_blank" rel="noopener"><img src="assets/logos/aipressroom-logo.png" alt="AIPressRoom" class="logo-wall__img logo-wall__img--invert" style="--lh: 36px" width="341" height="72" loading="lazy" /></a></li>
-        <li class="logo-wall__item"><a href="https://www.timesofai.com/" target="_blank" rel="noopener"><img src="assets/logos/timesofai-logo.png" alt="Times Of AI" class="logo-wall__img logo-wall__img--invert" style="--lh: 26px" width="180" height="29" loading="lazy" /></a></li>
+      <ul class="nc-media" role="list" data-reveal>
+        <li><img src="assets/logos/media/the-information.svg" alt="The Information" style="--h: 20px" width="194" height="20" loading="lazy" /></li>
+        <li><img src="assets/logos/media/semianalysis.svg" alt="SemiAnalysis" style="--h: 24.9px" width="153" height="25" loading="lazy" /></li>
+        <li><img src="assets/logos/media/9fin.png" alt="9fin" style="--h: 36px" width="73" height="36" loading="lazy" /></li>
+        <li><img src="assets/logos/sponsors/silicon-data.svg" alt="Silicon Data" style="--h: 27.5px" width="147" height="28" loading="lazy" /></li>
+        <li><img src="assets/logos/media/dataphoenix.png" alt="DataPhoenix" style="--h: 22.7px" width="178" height="23" loading="lazy" /></li>
+        <li><img src="assets/logos/media/cosmic-labs.png" alt="Cosmic Labs" style="--h: 36.7px" width="131" height="37" loading="lazy" /></li>
+        <li><a href="https://aipressroom.com/events-calendar/" target="_blank" rel="noopener"><img src="assets/logos/media/aipressroom.png" alt="AIPressRoom" style="--h: 28.3px" width="134" height="28" loading="lazy" /></a></li>
+        <li><a href="https://www.timesofai.com/" target="_blank" rel="noopener"><img src="assets/logos/media/timesofai.png" alt="Times Of AI" style="--h: 25.6px" width="159" height="26" loading="lazy" /></a></li>
       </ul>
     </section>
 

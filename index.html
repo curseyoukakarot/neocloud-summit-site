@@ -246,7 +246,7 @@
       list-style: none; display: flex; flex-wrap: wrap; justify-content: center; column-gap: 1.5rem;
       padding-top: 2.2rem; border-top: 1px solid var(--line);
     }
-    .nc-media li { flex: 0 0 calc((100% - 3 * 1.5rem) / 4); height: 84px; display: flex; align-items: center; justify-content: center; }
+    .nc-media li { flex: 0 0 calc((100% - 4 * 1.5rem) / 5); height: 84px; display: flex; align-items: center; justify-content: center; }
     .nc-media a { display: flex; align-items: center; }
     .nc-media img { height: var(--h); width: auto; max-width: 100%; object-fit: contain; }
     .nc-editorial { margin-top: 1.8rem; color: var(--grey); font-weight: 350; max-width: 44em; }
@@ -263,10 +263,12 @@
       .nc-sponsors img { height: calc(var(--h) * 0.85); }
       .nc-sponsors__word { font-size: 25px; }
       .nc-glance { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .nc-media img { height: calc(var(--h) * 0.85); }
       .nc-glance__item:nth-child(4) { border-left: 0; }
       .nc-glance__item:nth-child(n+4) { border-top: 1px solid var(--line); }
     }
     @media (max-width: 900px) {
+      .nc-media li { flex-basis: calc((100% - 3 * 1.5rem) / 4); }
       .nc-venue > :not(.nc-venue__media) { max-width: none; }
       .nc-venue__media {
         position: relative; width: auto; height: auto; aspect-ratio: 4 / 3;
@@ -688,13 +690,15 @@
 
     <!-- ══════════ MEDIA & ANALYSTS ══════════
          White, trimmed logos (sources in logos/media/); --h = optically balanced height.
-         Two rows of four on desktop, two per row on phones. -->
+         Two rows of five on desktop, four per row on small tablets, two per row on phones. -->
     <section class="section" id="media-partners" aria-labelledby="mediaPartnersTitle">
       <p class="eyebrow mono" data-reveal><span class="eyebrow__slash">//</span> Media &amp; Analysts</p>
       <h2 class="h-display" id="mediaPartnersTitle" data-reveal>AMPLIFYING THE<br /><span class="h-grad">NEOCLOUD CONVERSATION</span><span class="dot-red">.</span></h2>
       <ul class="nc-media" role="list" data-reveal>
         <li><img src="assets/logos/media/the-information.svg" alt="The Information" style="--h: 20px" width="194" height="20" loading="lazy" /></li>
+        <li><img src="assets/logos/media/thomson-reuters.png" alt="Thomson Reuters" style="--h: 46px" width="138" height="46" loading="lazy" /></li>
         <li><img src="assets/logos/media/semianalysis.svg" alt="SemiAnalysis" style="--h: 24.9px" width="153" height="25" loading="lazy" /></li>
+        <li><img src="assets/logos/media/infoworld.svg" alt="InfoWorld" style="--h: 25px" width="124" height="25" loading="lazy" /></li>
         <li><img src="assets/logos/media/9fin.png" alt="9fin" style="--h: 36px" width="73" height="36" loading="lazy" /></li>
         <li><img src="assets/logos/sponsors/silicon-data.svg" alt="Silicon Data" style="--h: 27.5px" width="147" height="28" loading="lazy" /></li>
         <li><img src="assets/logos/media/dataphoenix.png" alt="DataPhoenix" style="--h: 22.7px" width="178" height="23" loading="lazy" /></li>

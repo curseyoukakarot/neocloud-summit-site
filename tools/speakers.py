@@ -10,7 +10,7 @@ LI = 'https://www.linkedin.com/in/'
 S = [
  ('nicola-tan','Nicola Tan','Go-to-Market','AMD','nicolatan','Keynote'),
  ('angela-yeung','Angela Yeung','SVP Product','Cerebras',None,None),
- ('matt-ouellette','Matt Ouellette','Sr. Director, AI Product Management','AMD','matthewouellette',None),
+ ('mark-orthodoxou','Mark Orthodoxou','Sr. Director, Business Development, Instinct GPUs','AMD','mark-orthodoxou-94b189',None),
  ('carl-brown','Carl Brown','VP of Sales','Supermicro','carlbrown40',None),
  ('liran-zvibel','Liran Zvibel','CEO','WEKA','liranzvibel',None),
  ('val-bercovici','Val Bercovici','Chief AI Officer','WEKA','valentinbercovici',None),
@@ -18,7 +18,7 @@ S = [
  ('rahul-varshneya','Rahul Varshneya','Managing Director','Morgan Stanley','rahul-varshneya-6635b11a',None),
  ('anderson-lin','Anderson Lin','GM','Tencent Cloud',None,None),
  ('vladimirs-sazonovs','Vladimirs Sazonovs','Global Infrastructure Funds','Cisco','vsazonov',None),
- ('rishabh-parakh','Rishabh Parakh','Principal Product Manager','Cisco',None,None),
+ ('murali-gandluru','Murali Gandluru','SVP, Data Center Networking','Cisco','muraligandluru',None),
  ('kevin-cochrane','Kevin Cochrane','CMO','Vultr','kevinvcochrane','Keynote'),
  ('duncan-ng','Duncan Ng','VP of Systems Engineering','Vultr',None,None),
  ('syona-sarma','Syona Sarma','VP of Hardware','DigitalOcean','syona-sarma-7824222',None),

@@ -25,7 +25,7 @@ S = [
  ('vyoma-gajjar','Vyoma Gajjar','Sr. Principal AI Architect','ServiceNow','vyomagajjar',None),
  ('rob-naidoff','Rob Naidoff','VP Americas, GTM','SambaNova','rob-n-6aa43023',None),
  ('dean-nelson','Dean Nelson','Chairman, iMasons · CEO, Cato Digital','iMasons','deannelson','Keynote'),
- ('aravind-srikumar','Aravind Srikumar','SVP of Product &amp; Marketing','Upscale AI','aravind-srikumar-a6227019','Keynote'),
+ ('aravind-srikumar','Aravind Srikumar','SVP of Product &amp; Marketing','Upscale','aravind-srikumar-a6227019','Keynote'),
  ('muneeb-rasool','Muneeb Rasool','Founder &amp; CEO','Tensor Machines','muneebrasool','Keynote'),
  ('arzoo-mittal','Arzoo Mittal','Technical Program Manager','TransUnion','mittal-arzoo',None),
  ('drew-pletcher','Drew Pletcher','Principal Architect','Lightning AI','drew-pletcher-a14907',None),

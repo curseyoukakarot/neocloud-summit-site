@@ -20,7 +20,7 @@ S = [
  ('vladimirs-sazonovs','Vladimirs Sazonovs','Global Infrastructure Funds','Cisco','vsazonov',None),
  ('murali-gandluru','Murali Gandluru','SVP, Data Center Networking','Cisco','muraligandluru',None),
  ('kevin-cochrane','Kevin Cochrane','CMO','Vultr','kevinvcochrane','Keynote'),
- ('duncan-ng','Duncan Ng','VP of Systems Engineering','Vultr','duncan-ng',None),
+ ('duncan-ng','Duncan Ng','Vice President Solutions Engineering','Vultr','duncan-ng',None),
  ('syona-sarma','Syona Sarma','VP of Hardware','DigitalOcean','syona-sarma-7824222',None),
  ('vyoma-gajjar','Vyoma Gajjar','Sr. Principal AI Architect','ServiceNow','vyomagajjar',None),
  ('rob-naidoff','Rob Naidoff','VP Americas, GTM','SambaNova','rob-n-6aa43023',None),

@@ -35,7 +35,7 @@ S = [
  ('steve-mckay','Steve McKay','SVP Technology','Massed Compute','steve-mckay42',None),
  ('steven-hou','Steven Hou','Head of Research','Silicon Data','steve-hou-001',None),
  ('carmen-li','Carmen Li','CEO','Compute Exchange','carmenrli',None),
- ('nilesh-shah','Nilesh Shah','VP Partnerships','Hosted.ai',None,None),
+ ('nilesh-shah','Nilesh Shah','VP Partnerships','Hosted.ai','nilesh-n-shah',None),
  ('johnny-liu','Johnny Liu','Co-founder &amp; CTO','Yotta Labs','johnnyinfra',None),
  ('lamia-youseff','Lamia Youseff','CEO','Jazz Computing','lyouseff',None),
  ('bryan-lubin','Bryan Lubin','Managing Director','Moonshot Energy','bryan-a-lubin-8956b119',None),

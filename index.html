@@ -280,6 +280,9 @@
     }
     @media (max-width: 640px) {
       .nc-forces { grid-template-columns: 1fr; }
+      /* Phones: the long attendee range gets its own row so it never breaks at the hyphen */
+      #why .proof__stats--three { grid-auto-flow: dense; }
+      #why .proof__stats--three .stat:nth-child(2) { grid-column: 1 / -1; }
       .nc-cos__logos { column-gap: 1rem; }
       .nc-cos__logos li { flex-basis: calc((100% - 1rem) / 2); height: 60px; }
       .nc-cos__logos img { height: calc(var(--h) * 0.72); }
@@ -388,12 +391,12 @@
         It's one focused day on the companies and decisions building the next cloud.</p>
       <div class="proof__stats proof__stats--three">
         <div class="stat" data-reveal>
-          <span class="stat__num">50+</span>
+          <span class="stat__num">75+</span>
           <span class="stat__label mono">Neoclouds in the room</span>
         </div>
         <div class="stat" data-reveal>
-          <span class="stat__num">250-300</span>
-          <span class="stat__label mono">Senior AI infrastructure leaders</span>
+          <span class="stat__num">400-450+</span>
+          <span class="stat__label mono">AI infrastructure leaders</span>
         </div>
         <div class="stat" data-reveal>
           <span class="stat__num">30+</span>
@@ -505,9 +508,9 @@
 
       <article class="detail-row" data-reveal>
         <span class="detail-row__num" aria-hidden="true">01</span>
-        <h3 class="detail-row__title"><span class="h-grad">50+</span> Neoclouds</h3>
+        <h3 class="detail-row__title"><span class="h-grad">75+</span> Neoclouds</h3>
         <div class="detail-row__body">
-          <p>More than 50 neoclouds in one room, alongside the sponsors, partners, and collaborators they build with.</p>
+          <p>More than 75 neoclouds in one room, alongside the sponsors, partners, and collaborators they build with.</p>
         </div>
       </article>
       <article class="detail-row" data-reveal>
@@ -515,7 +518,7 @@
         <h3 class="detail-row__title">Decision-Makers <span class="h-grad">Only</span></h3>
         <div class="detail-row__body">
           <p>Operators, builders, and executives of the leading infrastructure providers, plus the enterprise buyers
-            moving AI into production and the investors underwriting the buildout. 250-300 senior leaders.</p>
+            moving AI into production and the investors underwriting the buildout. 400-450+ AI infrastructure leaders.</p>
         </div>
       </article>
       <article class="detail-row" data-reveal>
